@@ -1,0 +1,17 @@
+@use '../../../../fonts';
+
+.hero1{
+    &__title{
+        &-line{
+            @include fonts.Work-sans(33px, normal, 700, 120%, -0.02em);
+            align-items: center;
+            text-transform: uppercase;
+            color: #367ACA;
+            margin: 0px;
+
+            &--grey{
+                color: rgb(78, 88, 98);
+            }
+        }
+    }
+}

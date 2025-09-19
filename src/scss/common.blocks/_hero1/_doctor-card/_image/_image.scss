@@ -1,0 +1,11 @@
+.doctor-card{
+    width: auto;
+    height: auto;
+    &__image{
+        width: auto;
+        height: 810px;
+        position: absolute;
+        right: 180px;
+        z-index: 10;
+    }
+}

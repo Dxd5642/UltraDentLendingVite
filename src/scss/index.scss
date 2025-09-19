@@ -1,0 +1,31 @@
+// Default
+@use './fonts';
+@use './common.blocks/_container/container' as *;
+@use './common.blocks/_head/head' as *;
+@use './common.blocks/_hero1/_departments/departments' as *;
+@use './common.blocks/_body/body' as *;
+@use './common.blocks/_hero1/hero1' as *;
+@use './common.blocks/_hero1/_tooth-image/tooth-image' as *;
+@use './common.blocks/_hero1/_doctor-card/_image/image' as *;
+@use './common.blocks/_hero1/_doctor-card/_doctor/doctor' as *;
+@use './common.blocks/_hero1/_doctor-card/doctor-card' as *;
+@use './common.blocks/_hero1/_offer/offer' as *;
+@use './common.blocks/_hero1/_offer/_title/title' as * ;
+@use './common.blocks/_hero1/_button/button' as *;
+@use './common.blocks/_hero1/_promo/promo' as *;
+@use './common.blocks/_hero1/_bg-blur/bg_blur' as *;
+
+
+//  Notebook adaptation
+@use './notebook.blocks/_container/container' as *;
+@use './notebook.blocks/_body/body' as *;
+@use './notebook.blocks/_head/head' as *;
+@use './notebook.blocks/_hero1/_departments/departments' as *;
+
+
+
+// Phone adaptation
+@use './phone.blocks/_hero1/_departments/departments' as *;
+@use './phone.blocks/_head/head' as *;
+@use './phone.blocks/_head/_head-mobile-span/hm-span' as *;
+@use './phone.blocks/_body/body' as *;

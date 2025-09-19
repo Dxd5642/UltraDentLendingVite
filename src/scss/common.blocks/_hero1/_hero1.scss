@@ -1,0 +1,28 @@
+
+.hero1{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: rgba(65, 64, 77, 1);
+
+
+    &__content{
+        width: 100%;
+        max-width: 1640px;
+        display: flex;
+        justify-content: space-around; //space-beetwen
+        
+    }
+
+    &__block1{
+        min-width: 833px;
+        padding: 198px 0px 196px 170px;
+        margin-right: auto;
+    }
+
+    &__block2{
+        padding-top: 161px;
+        margin-left: auto;
+    }
+}
+

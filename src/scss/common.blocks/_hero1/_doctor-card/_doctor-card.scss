@@ -1,0 +1,95 @@
+@use '../../../fonts';
+
+.doctor-card{
+    padding-right: 32px;
+    
+
+    &__content{
+        z-index: 15;
+        width: 345px;
+        height: auto;
+        margin-bottom: auto;
+        border-radius: 16px;
+        background-color: rgba(243, 243, 243, 1);
+        position: relative;
+        padding: 30px 10px;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__statement{
+        width: 100%;
+        height: auto;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(179, 179, 179, 1);
+    }
+
+    &__slogan{
+        @include fonts.Work-sans(24px, normal, 400, 100%, -0.005em);
+        font-family: 'Work Sans', sans-serif;
+        text-transform: uppercase;
+        color: #444C54;
+        margin: 0px;
+    }
+
+    &__benefits{
+        width: 100%;
+        height: auto;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__benefit{
+        @include fonts.Montserrat(16px, normal, 400, 100%, -0.005em);
+        font-family: 'Montserrat', sans-serif;
+        align-items: center;
+        color: #444C54;
+        margin: 0px;
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    &__name{
+        //none
+    }
+
+    &__surname{
+        @include fonts.Work-sans(22px, normal, 700, 100%, -0.005em);
+        color: #367ACA;
+        margin: 0px;
+    }
+
+    &__fullname{
+        @include fonts.Work-sans(16px, normal, 500, 100%, -0.005em);
+        color: #444C54;
+        margin: 0px;
+    }
+
+    &__position{
+        //none
+    }
+
+    &__specialty{
+        @include fonts.Work-sans(14px, normal, 600, 100%, -0.005em);
+        color: #367ACA;
+        margin: 0px;
+    }
+
+    &__decoration{
+        position: absolute;
+        border-left: 17.5px solid transparent;
+        border-right: 17.5px solid transparent;
+        border-bottom: 35px solid rgba(243, 243, 243, 1);
+        max-width: 0px;
+        max-height: 0px;
+        transform: rotate(-90deg) translate(-312px, -44.5px);
+    }
+}

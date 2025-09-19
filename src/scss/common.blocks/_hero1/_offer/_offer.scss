@@ -1,0 +1,15 @@
+
+.hero1{
+    &__offer{
+        background-color: rgba(242, 242, 242, 0.8);
+        border-radius: 16px;
+        padding: 30px 48px;
+        gap: 19px;
+        width: auto;
+        height: auto;
+        max-width: 663px;
+        max-height: 265px;
+        position: relative;
+        z-index: 15;
+    }
+}

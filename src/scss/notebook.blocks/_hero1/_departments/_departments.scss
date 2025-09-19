@@ -1,0 +1,25 @@
+@media (max-width: 1480px){
+    .frag1__main-div__departments{
+        top: 92px;
+    }
+}
+
+@media (max-width: 1380px){
+    .frag1__main-div__departments{
+        top: 86px;
+        transform: unset;
+        justify-self: left;
+    }
+}
+
+@media (max-width: 1161px){
+    .frag1__main-div__departments{
+        top: 85px;
+    }
+}
+
+@media (max-width: 1090px){
+    .frag1__main-div__departments{
+        top: 84px;
+    }
+}

@@ -1,0 +1,301 @@
+@use '../../common.blocks/_container/container';
+@use '../../fonts';
+
+
+
+
+@media (max-width: 1024px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .head{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 16px 0px;
+    }
+
+    .header{
+        justify-content: unset;
+        box-sizing: border-box;
+        width: 100%;
+
+        &__div3_d{
+            display: flex;
+        }
+
+        &__div1{
+            width: auto;
+            max-width: 50%;
+            
+        }
+
+        &__div1__img{
+            width: 100%;
+            height: unset;
+            max-height: 50px;
+        }
+
+        &__div2{
+            flex-direction: column;
+            display: none;
+            height: auto;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0px 16px;
+        }
+
+        &__div2__btn{
+            font-size: 20px;
+            font-style: medium;
+            height: 52px;
+            width: 100%;
+            padding: 0px 16px;
+            box-sizing: border-box;
+        }
+
+        &__div3{
+            flex-direction: column;
+            justify-content: center;
+            gap: 16px;
+            margin-left: auto;
+            
+        }
+
+        &__div3__img{
+            width: 40px;
+            height: 40px;
+        }
+
+        &__div3__p{
+            display: none;
+            max-width: unset;
+            font-size: 18px;
+        }
+
+        &__div4{
+            display: none;
+            width: 100%;
+            height: auto;
+            
+        }
+
+        &__div4__btn{
+            height: 100%;
+            font-size: 14px;
+            box-shadow: 0px 12px 100px rgba(180, 207, 238, 0.9);
+            min-height: 52px;
+        }
+
+        &__menu-mobile{
+            flex-direction: column;
+            margin-left: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 11px 9px;
+            gap: 2px;
+            justify-self: end;
+        }
+    }
+
+    .vd{
+        display: flex;
+        flex-direction: row;
+        gap: 0px;
+    }
+
+    .vdn{
+        display: unset;
+    }
+
+    .vmn{display: none;}
+
+    .head2{
+        position: fixed;
+        width: 100%;
+        max-height: 100vh;
+        margin-top: 120px; 
+        z-index: 999;
+        max-width: 464px;
+        height: 82%; // Delete
+
+        display: flex;
+        opacity: 0;
+        visibility: hidden;
+        height: 0%;
+        overflow: hidden;
+        transition: opacity 0.3s ease, height 0.3s ease, visibility 0.3s ease;
+
+        &.active{
+            opacity: 1;
+            visibility: visible;
+            height: 478px;
+        }
+    }
+
+    .header-mobile{
+        display: flex;
+        background-color: rgb(65, 64, 77);
+        flex-direction: column;
+        justify-content: space-between;
+        // gap: 20px; Add
+        width: 100%;
+        max-width: 700px;
+        max-width: 100%;
+        box-sizing: border-box;
+        height: 478px; // Delete
+        padding: 16px 0px 0px 0px;
+
+        &.active{
+            display: flex;
+        }
+    }
+
+    .hm{
+        display: flex;
+    }  
+
+    .h2{
+        margin: unset;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0px 16px;
+    }
+}
+
+@media (max-width: 620px){
+    .vdn{
+        display: none;
+    }
+    .vmn{display: flex}
+}
+
+@media (max-width: 500px){
+    .head{
+        width: 100%;
+        height: auto;
+        align-items: center;
+        margin-top: 0px;
+        padding-top: 5px;
+    }
+
+    .head2{
+        margin: 0px;
+        display: flex;
+        opacity: 0;
+        visibility: hidden;
+        height: 0%;
+        overflow: hidden;
+        transition: opacity 0.3s ease, height 0.3s ease, visibility 0.3s ease;
+        
+        &.active{
+            opacity: 1;
+            visibility: visible;
+            height: 100%;
+        }
+    }
+
+    .header{
+        &__div3_d{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__div1{
+            width: 50%;
+            height: auto;
+        }
+
+        &__div2{
+            flex-direction: column;
+            display: none;
+            height: auto;
+            width: 100%;
+            gap: 5px;
+            
+        }
+
+        &__div2__btn{
+            font-size: 20px;
+            font-style: medium;
+            height: 52px;
+            width: 100%;
+        }
+
+        &_div3{
+            flex-direction: column;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        &__div3__img{
+            width: 36px;
+            height: 36px;
+        }
+
+        &__div3__p{
+            display: none;
+        }
+
+        &__div4{
+            display: none;
+            width: 100%;
+            height: auto;
+        }
+
+        &__div4__btn{
+            height: 100%;
+            font-size: 14px;
+            box-shadow: 0px 12px 100px rgba(180, 207, 238, 0.9);
+        }
+
+        &__menu-mobile{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 36px;
+            max-height: 36px;
+            justify-content: space-between;
+            transform: rotate(0deg);
+            transition: transform 0.3s ease;
+
+            &.active{
+                transform: rotate(-180deg);
+            }
+        }
+
+        &__menu-mobile-img{
+            width: 24px;
+            height: 66%;
+            min-width: 24px;
+            min-height: 24px;
+        }
+    }
+
+    .header-mobile{
+        height: 100%;
+        padding: 100px 16px 16px 16px;
+        border-radius: unset;
+
+        &.active{
+            display: flex;
+        }
+    }
+
+    .hm{
+        display: flex;
+    }
+}
+
+@media (max-width: 345px){
+    .header{
+        &__div3__p{
+            font-size: 14px;
+        }
+    }
+}

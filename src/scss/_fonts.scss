@@ -1,0 +1,42 @@
+@font-face {
+  font-family:'Work-sans';
+  src: url("../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: Montserrat;
+  src: url("../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-display: swap;
+}
+
+@mixin Work-sans(
+  $font-size: 16px,
+  $font-style: normal,
+  $font-weight: 500,
+  $line-height: 100%,
+  $letter-spacing: -0.5px
+){
+  font-family: Work-sans, sans-serif;
+  font-size: $font-size;
+  font-style: $font-style;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin Montserrat(
+  $font-size: 16px,
+  $font-style: normal,
+  $font-weight: 500,
+  $line-height: 100%,
+  $letter-spacing: -0.5px
+){
+  font-family: Montserrat, sans-serif;
+  font-size: $font-size;
+  font-style: $font-style;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}

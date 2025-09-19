@@ -1,0 +1,15 @@
+.hero1{
+    &__tooth-image{
+        position: absolute;
+        top: 130px;
+        left: -170px;
+        width: auto;
+        height: auto;
+        z-index: 20;
+    }
+
+    &__tooth-img{
+        width: 345px;
+        height: 520px;
+    }
+}
