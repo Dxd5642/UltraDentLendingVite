@@ -1,0 +1,9 @@
+@media (max-width: 1450px){
+    .doctor-card{
+        &__image{
+            height: 611px;
+            transform: translateY(66px);
+            right: 131px;
+        }
+    }
+}

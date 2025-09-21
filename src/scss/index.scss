@@ -21,11 +21,32 @@
 @use './notebook.blocks/_body/body' as *;
 @use './notebook.blocks/_head/head' as *;
 @use './notebook.blocks/_hero1/_departments/departments' as *;
+@use './notebook.blocks/_hero1/hero1' as *;
+@use './notebook.blocks/_hero1/_tooth-image/tooth-image' as *;
+@use './notebook.blocks/_hero1/_doctor-card/_image/image' as *;
+@use './notebook.blocks/_hero1/_doctor-card/_doctor/doctor' as *;
+@use './notebook.blocks/_hero1/_doctor-card/doctor-card' as *;
+@use './notebook.blocks/_hero1/_offer/offer' as *;
+@use './notebook.blocks/_hero1/_offer/_title/title' as * ;
+@use './notebook.blocks/_hero1/_button/button' as *;
+@use './notebook.blocks/_hero1/_promo/promo' as *;
+@use './notebook.blocks/_hero1/_bg-blur/bg_blur' as *;
 
 
 
 // Phone adaptation
+@use './phone.blocks/_container/container' as *;
 @use './phone.blocks/_hero1/_departments/departments' as *;
 @use './phone.blocks/_head/head' as *;
 @use './phone.blocks/_head/_head-mobile-span/hm-span' as *;
 @use './phone.blocks/_body/body' as *;
+@use './phone.blocks/_hero1/hero1' as *;
+@use './phone.blocks/_hero1/_tooth-image/tooth-image' as *;
+@use './phone.blocks/_hero1/_doctor-card/_image/image' as *;
+@use './phone.blocks/_hero1/_doctor-card/_doctor/doctor' as *;
+@use './phone.blocks/_hero1/_doctor-card/doctor-card' as *;
+@use './phone.blocks/_hero1/_offer/offer' as *;
+@use './phone.blocks/_hero1/_offer/_title/title' as * ;
+@use './phone.blocks/_hero1/_button/button' as *;
+@use './phone.blocks/_hero1/_promo/promo' as *;
+@use './phone.blocks/_hero1/_bg-blur/bg_blur' as *;

@@ -1,0 +1,73 @@
+@media (max-width: 1068px){
+    .hero1{
+        &__promo{
+            justify-self: center;
+        }
+    }
+}
+
+@media (max-width: 734px){
+    .hero1{
+        &__promo{
+            transform: translateX(-5px);
+        }
+    }
+}
+
+@media (max-width: 483px){
+    .promo{
+        max-width: 268px;
+        max-height: 91px;
+        padding: 10px 15px;
+        transform: translateX(23px);
+        margin-top: 29px;
+
+        &__title{
+            font-size: 14px; //must 16
+        }
+
+        &__price{
+            height: 41px;
+        }
+
+        &__price-value{
+            font-size: 24px;
+        }
+
+        &__details{
+            width: 255px;
+            height: 86px;
+            padding: 5px;
+            border-radius: 8px;
+            transform: rotate(-4deg) translate(-82px, -14px);
+        }
+
+        &__logo{
+            width: 60px;
+            height: 60px;
+        }   
+
+        &__includes{
+            padding: 5px 10px;
+
+            &-text{
+                font-size: 12px;
+            }
+        }
+        
+    }
+}
+
+@media(max-width: 370px){
+    .promo{
+        &__details{
+            transform: rotate(-4deg) translate(-52px, -10px);
+        }
+
+        &__includes{
+            &-text{
+                font-size: 12px;
+            }
+        }
+    }
+}

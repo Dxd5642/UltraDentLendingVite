@@ -1,0 +1,14 @@
+@media (max-width: 1450px){
+    .hero1{
+        &__content{
+            max-width: 1162px;
+        }
+
+        &__block1{
+            padding-top: 143px;
+            padding-bottom: 299px;
+            padding-left: 146px;
+            min-width: unset;
+        }
+    }
+}

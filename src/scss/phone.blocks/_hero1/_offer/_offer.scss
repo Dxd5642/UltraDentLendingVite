@@ -1,0 +1,17 @@
+@media (max-width: 1068px){
+    .hero1{
+        &__offer{
+            justify-self: center;
+        }
+    }
+}
+
+@media (max-width: 483px){
+    .hero1{
+        &__offer{
+            max-width: 361px;
+            width: 100%;
+            padding: 15px 16px;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@media (max-width: 1450px){
+    .promo{
+        max-width: 240px;
+        max-height: 140px;
+        padding: 10px 15px;
+        transform: translateX(46px);
+        z-index: 20;
+        margin-top: 36px;
+
+        &__title{
+            font-size: 20px;
+        }
+
+        &__price{
+            height: 61px;
+            display: flex;
+        }
+
+        &__price-value{
+            font-size: 34px;
+        }
+
+        &__details{
+            width: 264px;
+            height: 86px;
+            padding: 5px;
+            transform: rotate(-4deg) translate(78px, -17px);
+        }
+
+        &__logo{
+            width: 75px;
+            height: 75px;
+        }
+
+        &__brand{
+            font-size: 14px;
+        }
+
+        &__includes{
+            padding: 5px 10px;
+
+            &-text{
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+}

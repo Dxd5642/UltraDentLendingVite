@@ -1,0 +1,38 @@
+@media (max-width: 483px){
+    .doctor-card{
+        &__content{
+            width: 221px;
+            padding: 16px;
+            border-radius: 8px;
+            gap: 16px;
+        }
+
+        &__slogan{
+            font-size: 17px;
+        }
+
+        &__benefit{
+            font-size: 13px;
+        }
+
+        &__surname{
+            font-size: 16px;
+        }
+
+        &__fullname{
+            font-size: 13px;
+        }
+
+        &__specialty{
+            font-size: 14px;
+        }
+
+        &__decoration{
+            border-left: 13px solid transparent;
+            border-right: 13px solid transparent;
+            border-bottom: 26px solid rgba(243, 243, 243, 1);
+
+            transform: rotate(-90deg) translate(-12px, -41.5px);
+        }
+    }
+}

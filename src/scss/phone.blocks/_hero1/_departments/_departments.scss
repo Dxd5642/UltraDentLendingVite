@@ -1,4 +1,4 @@
-@media (max-width: 1024px){
+@media (max-width: 1068px){
     .frag1__main-div__departments{
         display: none;
         max-width: unset;
@@ -25,9 +25,7 @@
             font-size: clamp(12px, 3vw, 18px);
         }
 
-        &__div3{
-            transform: rotate(-90deg);
-        }
+        
     } 
 
     .mv{

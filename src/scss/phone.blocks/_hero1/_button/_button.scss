@@ -1,0 +1,19 @@
+@media (max-width: 483px){
+    .hero1{
+        &__button{
+            border-radius: 8px;
+            padding: 12px 16px;
+        }
+    }
+
+    .button{
+        &__icon{
+            width: 16px;
+            height: 16px;
+        }
+
+        &__text{
+            font-size: 14px;
+        }
+    }
+}
