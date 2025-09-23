@@ -1,0 +1,19 @@
+@media (max-width: 1640px){
+    .hero2{
+        &__slider{
+            max-width: 672px;
+            height: 401px;
+            overflow: hidden;
+            position: relative;
+
+            &-txt{
+                font-size: 19px;
+            }
+            
+        }
+
+        &__slide{
+            min-width: 672px;
+        }
+    }
+}

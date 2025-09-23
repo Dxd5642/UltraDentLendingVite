@@ -1,0 +1,20 @@
+@media (max-width: 1640px){
+    .hero2{
+        &__title-block{
+            max-width: 442px;
+            width: 100%;
+            max-height: 300px;
+            border-radius: 16px;
+            padding: 48px 24px;
+            gap: 16px;
+        }
+
+        &__title{
+            font-size: 28px;
+        }
+
+        &__text{
+            font-size: 15px;
+        }
+    }
+}

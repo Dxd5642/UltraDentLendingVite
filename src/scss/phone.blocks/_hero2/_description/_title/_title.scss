@@ -1,0 +1,16 @@
+@media (max-width: 700px){
+    .hero2{
+        &__title-block{
+            padding: 32px 16px;
+            max-width: 361px
+        }
+        
+        &__title{
+            font-size: clamp(20px, 5vw, 23px);
+        }
+
+        &__text{
+            font-size: 13px;
+        }
+    }
+}

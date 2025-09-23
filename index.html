@@ -4,9 +4,97 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer@^3.4.0/dist/model-viewer.min.js"></script>
+
+  <style>.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(65, 64, 77, 1);; 
+    z-index: 9999; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition-delay: 3s;
+    transition: opacity 1s ease-out, visibility 1s ease-out;
+}
+
+.loader-tooth{
+    animation: loader 0.5s linear infinite;
+}
+
+@keyframes loader{
+  0% { transform: rotate(-30deg); }
+  50% { transform: rotate(30deg); }
+  100% { transform: rotate(-30deg); }
+}
+
+.loader-text{
+  text-align: center;
+  color: #f3f3f3;
+}
+
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.preloader.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+body:not(.loaded) #content {
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+
+}
+        
+body.loaded #content {
+    opacity: 1;
+    visibility: visible;
+    overflow: unset;
+    transition: opacity 0.3s ease;
+}
+
+.head:not(.loaded) #content {
+    opacity: 0;
+    visibility: hidden;
+}
+        
+.head.loaded #content {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
+}
+</style>
 
 </head>
 <body>
+
+<div id="preloader" class="preloader">
+        <div>
+          <svg width="96" height="96" viewBox="0 0 96 96" class="loader-tooth">
+          <path d="M53.25,6.46a11.48,11.48,0,0,1-10.5,0C32.22,1.06,9.5-6.29,9.5,30.72,9.5,55.55,23,94,32.6,94S38.38,55.67,48,55.67,53.77,94,63.4,94,86.5,55.55,86.5,30.72C86.5-6.29,63.78,1.06,53.25,6.46Z" style="fill:#eaeaea"/>
+          <path d="M72.5,2.35c3.6,4.25,6,11.58,6,23.62,0,22.39-10.95,55.83-20.16,62.2C59.48,91.67,61,94,63.4,94,73,94,86.5,55.55,86.5,30.72,86.5,11.05,80.09,3.91,72.5,2.35Z" style="fill:#bacece"/>
+          <path d="M53.25,6.46a11.48,11.48,0,0,1-10.5,0C32.22,1.06,9.5-6.29,9.5,30.72,9.5,55.55,23,94,32.6,94S38.38,55.67,48,55.67,53.77,94,63.4,94,86.5,55.55,86.5,30.72C86.5-6.29,63.78,1.06,53.25,6.46Z" style="fill:none;stroke:#281a3b;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px"/></svg>
+        </div>
+        <div class="loader"></div>
+        <h2 class="loader-text">Сайт загружается, <br>пожалуйста подождите...</h2>
+</div>
 
 <section class="head">
   <div class="container">
@@ -23,7 +111,7 @@
         </div>
         <div class="header__div3 vd">
           <img src="./src/assets/images/call_me.png" alt="call_me" class="header__div3__img">
-          <a class="header__div3__p vdn">+7 (345) 239-44-31</a>
+          <a href="tel:+73452394431" class="header__div3__p vdn">+7 (345) 239-44-31</a>
         </div>
         <div class="header__div4">
           <button class="header__div4__btn">Перезвонить мне</button>
@@ -58,7 +146,7 @@
       <div class="header__div3 hm h2">
         <div class="header__div3_d  vmn">
           <img src="./src/assets/images/call_me.png" alt="call_me" class="header__div3__img hm">
-          <a class="header__div3__p hm">+7 (345) 239-44-31</a>
+          <a href="tel:+73452394431" class="header__div3__p hm">+7 (345) 239-44-31</a>
         </div>
         <div class="header__div3_d">
           <img src="./src/assets/images/departments_logo_2.png" alt="call_me" class="header__div3__img hm">
@@ -113,7 +201,7 @@
           </button>
           
           <div class="hero1__tooth-image">
-            <img src="./src/assets/images/Tooth_Implant.png" alt="Имплант зуба" class="hero1__tooth-img">
+            <img src="./src/assets/images/Tooth_Implant.png" alt="Имплант зуба" class="hero1__tooth-img animate-tooth">
           </div>
         </div>
 
@@ -176,8 +264,98 @@
   </div>
 </section>
 
+<section class="hero2">
+  <div class="container hero__container">
+    <div class="hero2__content">
+      <div class="hero2__block1">
+        <div class="hero2__description">
+          <div class="hero2__title-block">
+            <h1 class="hero2__title">
+              <span class="hero2__title-line">«отделение цифровой имплантации»</span>
+              <span class="hero2__title-dash hero2__title-line_black">—</span>
+              <span class="hero2__title-line hero2__title-line_black"><br>это 3 филиала общей площадью 3000 м<sup>2</sup></span>
+            </h1>
+            <p class="hero2__text">С учебным и детским отделениями, ортопедией, хирургией, цифровой зуботехнической лабораторией</p>
+          </div>
+          <div class="hero2__slider">
+            <div class="hero2__slides">
+              <div class="hero2__slide hero2__slide1">
+                <div class="hero2__slider-gradient">
+                  <div class="hero2__slider-text">
+                    <p class="hero2__slider-txt">Утраченные зубы - это не только эстетическая проблема, но и риск для здоровья. <b>Протезирование позволяет вернуть не только красивую улыбку, но и полноценную жизнь.</b></p>
+                  </div>
+                </div>
+              </div>
+              <div class="hero2__slide hero2__slide2">
+                <div class="hero2__slider-gradient">
+                  <div class="hero2__slider-text">
+                    <p class="hero2__slider-txt"> 
+                          Имплантация зубов – это современная и эффективная процедура, позволяющая восстановить 
+                          утраченные зубы и вернуть уверенность в себе.
+                          <br><b>Что такое имплантация зубов?</b>
+                          <br>Имплантация - это хирургическая процедура, при которой в челюстную кость вживляется 
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="hero2__slide hero2__slide3">
+                <div class="hero2__slider-gradient">
+                  <div class="hero2__slider-text">
+                    <p class="hero2__slider-txt">
+                        Красивая и здоровая улыбка – это не только эстетика, но и залог вашего здоровья.<br>
+                        <b>Следуйте этим простым правилам, чтобы сохранить свои зубы здоровыми и красивыми на долгие годы:</b><br>
+                        1. Чистите зубы дважды в день<br>
+                        2. Не забывайте про межзубные щетки<br>
+                        3. Посещайте стоматолога дважды в год<br>
+                        4. Ограничьте употребление сладкого<br>
+                        5. Не забывайте про фтор<br>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button-slider">
+            <button class="hero2__btn-slider hero2__btn-slider_left"><div class="icon"></div></button>
+            <button class="hero2__btn-slider hero2__btn-slider_right"><div class="icon"></div></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+
+
+<div class="backblur">
+  <div class="map-departments">
+    <div class="map-departments__map">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A283bddd2f02443b9420425a3f9fc2a6d9987867ca219bb4022d470f47cffd3b5&amp;width=1008&amp;height=559&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+    <div class="map-departments__menu">
+      <h1 class="map-departments__title">
+        <span class="map-departments__title-line">3 филиала</span><br>
+        <span class="map-departments__title-line map-departments__title-line_black">в тюмени</span>
+      </h1>
+      <p class="map-departments__time">
+        <span class="map-departments__time-line">ежедневно</span><br>
+        <span class="map-departments__time-line map-departments__time-line_bold">с 9:00 до 21:00</span>
+      </p>
+      <button class="map-departments__btn map-departments__btn-1">ул. Широтная 108/4</button>
+      <button class="map-departments__btn map-departments__btn-2">ул. Челюскинцев 29</button>
+      <button class="map-departments__btn map-departments__btn-3">ул. Республики 14/7</button>
+
+      <button class="map-departments__btn-record">
+        <p class="map-departments__btn-record-txt"></p>
+        <img src="./src/assets/svg/arrow-right.svg" alt="arrow-right" class="map-departments__btn-record-arrow">
+      </button>
+    </div>
+    <button class="map-departments__btn-close"><div class="icon"></div></button>
+  </div>
+</div>
 
 <script type="module" src="./src/main.js"></script>
 </body>
 </html>
+
+arrow

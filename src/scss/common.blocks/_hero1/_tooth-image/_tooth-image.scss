@@ -13,3 +13,21 @@
         height: 520px;
     }
 }
+
+.animate-tooth{
+    animation: smoothWobble 3s ease-in-out infinite;
+}
+
+@keyframes smoothWobble {
+    0%{
+        transform: rotate(0deg) translateY(0px);
+    }
+
+    50%{
+        transform: rotate(-10deg) translateY(15px);
+    }
+
+    100%{
+        transform: rotate(0deg) translateY(0px);
+    }
+}

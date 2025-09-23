@@ -1,0 +1,82 @@
+.button-slider{
+    max-width: 112px;
+    gap: 16px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+}
+
+.icon{
+    width: 7.41px;
+    height: 12px;
+}
+
+.hero2{
+    &__btn-slider{
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: rgba(116, 116, 116, 1) 1px solid;
+        color: red;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+        transition: all 0s ease;
+
+        &_left .icon{
+            background-image: url("../../../../assets/svg/btn-slider/btn-slider_left.svg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            transition: all 0s ease;
+
+            &:hover{
+                background-image: url('../../../../assets/svg/btn-slider/btn-slider_left_hover.svg');
+            }
+
+            &:active{
+                background-image: url('../../../../assets/svg/btn-slider/btn-slider_left_active.svg');
+            }
+        }
+
+        &_left{
+            &:active{
+                background-color: rgba(255, 194, 36, 0.1);
+            }
+        }
+
+        &_right .icon{
+            background-image: url("../../../../assets/svg/btn-slider/btn-slider_right.svg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            transition: all 0s ease;
+
+            &:hover{
+                background-image: url('../../../../assets/svg/btn-slider/btn-slider_right_hover.svg');
+            }
+
+            &:active{
+                background-image: url('../../../../assets/svg/btn-slider/btn-slider_right_active.svg');
+            }
+        }
+
+        &_right{
+            &:active{
+                background-color: rgba(255, 194, 36, 0.1);
+            }
+        }
+
+        &:hover{
+            border: rgba(45, 45, 45, 1) 1px solid
+        }
+
+        &:active{
+            border: rgba(255, 194, 36, 1) 1px solid;
+            
+        }
+    }
+
+}

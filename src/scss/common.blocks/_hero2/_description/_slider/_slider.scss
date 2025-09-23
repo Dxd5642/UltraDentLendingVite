@@ -1,0 +1,67 @@
+@use '../../../../fonts';
+.hero2{
+    &__slides{
+        width: auto;
+        height: 100%;
+        display: flex;
+        transition: transform 0.4s ease-out;
+    }
+
+    &__slider{
+        width: 1056px;
+        height: 606px;
+        overflow: hidden;
+        position: relative;
+        cursor: grab;
+        transition: cursor 0s ease;
+            &:active{
+                cursor: grabbing;
+            }
+
+        &-gradient{
+            width: 100%;
+            height: 100%;
+            padding: 16px;
+            border-radius: 16px;
+            background: linear-gradient(180deg, rgba(65, 64, 77, 0.8) 0%, rgba(65, 64, 77, 0) 79.46%);
+        }
+
+        &-text{
+            width: auto;
+            height: auto;
+            padding: 12px 28px;
+            border-radius: 12px;
+            background-color: rgba(242, 242, 242, 0.4);
+            -webkit-backdrop-filter: blur(22px);
+            backdrop-filter: blur(22px);
+        }
+
+        &-txt{
+            @include fonts.Work-sans(22px, normal, 400, 100%, 0em);
+            color: rgba(255, 255, 255, 1);
+        }
+        
+    }
+
+    &__slide{
+        min-width: 1024px;
+        height: 100%;
+        border-radius: 16px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+
+        &1{
+            background-image: url('../../../../../assets/images/hero2__slide1.png');
+        }
+
+        &2{
+            background-image: url('../../../../../assets/images/hero2__slide2.png');
+        }
+        
+        &3{
+            background-image: url('../../../../../assets/images/hero2__slide3.png');
+        }
+    }
+}

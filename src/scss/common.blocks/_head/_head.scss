@@ -7,11 +7,12 @@
     display: flex;
     position: fixed;
     justify-content: center;
+    justify-self: center;
     max-width: 1610px;
     width: auto;
     height: auto;
     max-height: 92px;
-    z-index: 9999;
+    z-index: 9998;
     margin-top: 16px;
 }
 
@@ -58,6 +59,11 @@
 
         width: auto;
         height: auto;
+        transition: all 0s ease;
+
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
 
         &:hover{
             border: 2px solid rgba(255, 255, 255, 0.4);
@@ -81,6 +87,10 @@
     &__div3__img{
         width: 30px;
         height: 30px;
+
+        &:hover{
+            animation: call-anim 0.5s ease-in-out;
+        }
     }
 
     &__div3__p{
@@ -111,6 +121,10 @@
         width: 100%;
         height: auto;
 
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+
         gap: 10px;
         box-shadow: 0px 12px 100px 0px rgba(180, 207, 238, 1);
 
@@ -118,7 +132,9 @@
         @include fonts.Work-sans(24px, normal, 600, 100%, -0.5px);
         text-align: center;
         color: #FFFFFF;
-        border: 0px
+        border: 0px;
+
+        transition: all 0s ease;
     }
 
     &__div4__btn:active{
@@ -134,6 +150,10 @@
         max-width: 56px;
         max-height: 56px;
         border: 0px;
+        transition: all 0.1s ease;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
 
         &:active{
             background: rgb(54, 123, 203);
@@ -154,4 +174,21 @@
 
 .head2{
     display: none;
+}
+
+@keyframes call-anim{
+    0%{
+        transform-origin: center center;
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform-origin: center center;
+        transform: rotate(30deg);
+    }
+
+    100%{
+        transform-origin: center center;
+        transform: rotate(0deg);
+    }
 }

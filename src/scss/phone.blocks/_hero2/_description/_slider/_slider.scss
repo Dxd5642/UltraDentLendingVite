@@ -1,0 +1,45 @@
+@media (max-width: 1178px){
+    .hero2{
+        &__slider{
+            max-width: 672px;
+            height: 401px;
+            overflow: hidden;
+            position: relative;
+
+            &-txt{
+                font-size: 19px;
+            }
+            
+        }
+
+        &__slide{
+            min-width: 672px;
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .hero2{
+        &__slider{
+            max-width: 100%;
+            max-height: 606px;
+            height: 70vh;
+        
+
+            &-text{
+                border-radius: 16px;
+            }
+
+            &-txt{
+                font-size: 16px;
+            }
+        }
+
+        &__slide{
+            max-width: 361px;
+            min-width: 100%;
+            width: 100%;
+            
+        }
+    }
+}

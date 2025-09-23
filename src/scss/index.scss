@@ -3,6 +3,7 @@
 @use './common.blocks/_container/container' as *;
 @use './common.blocks/_head/head' as *;
 @use './common.blocks/_hero1/_departments/departments' as *;
+@use './common.blocks/_hero1/_departments/_map-departments/map-departments' as *;
 @use './common.blocks/_body/body' as *;
 @use './common.blocks/_hero1/hero1' as *;
 @use './common.blocks/_hero1/_tooth-image/tooth-image' as *;
@@ -15,12 +16,19 @@
 @use './common.blocks/_hero1/_promo/promo' as *;
 @use './common.blocks/_hero1/_bg-blur/bg_blur' as *;
 
+@use './common.blocks/_hero2/hero2' as *;
+@use './common.blocks/_hero2/_description/description' as *;
+@use './common.blocks/_hero2/_description/_title/title' as *;
+@use './common.blocks/_hero2/_button-slider/button-slider' as *;
+@use './common.blocks/_hero2/_description/_slider/slider' as *;
+
 
 //  Notebook adaptation
 @use './notebook.blocks/_container/container' as *;
 @use './notebook.blocks/_body/body' as *;
 @use './notebook.blocks/_head/head' as *;
 @use './notebook.blocks/_hero1/_departments/departments' as *;
+@use './notebook.blocks/_hero1/_departments/_map-departments/map-departments' as *;
 @use './notebook.blocks/_hero1/hero1' as *;
 @use './notebook.blocks/_hero1/_tooth-image/tooth-image' as *;
 @use './notebook.blocks/_hero1/_doctor-card/_image/image' as *;
@@ -32,11 +40,18 @@
 @use './notebook.blocks/_hero1/_promo/promo' as *;
 @use './notebook.blocks/_hero1/_bg-blur/bg_blur' as *;
 
+@use './notebook.blocks/_hero2/hero2' as *;
+@use './notebook.blocks/_hero2/_description/description' as *;
+@use './notebook.blocks/_hero2/_description/_title/title' as *;
+@use './notebook.blocks/_hero2/_button-slider/button-slider' as *;
+@use './notebook.blocks/_hero2/_description/_slider/slider' as *;
+
 
 
 // Phone adaptation
 @use './phone.blocks/_container/container' as *;
 @use './phone.blocks/_hero1/_departments/departments' as *;
+@use './phone.blocks/_hero1/_departments/_map-departments/map-departments' as *;
 @use './phone.blocks/_head/head' as *;
 @use './phone.blocks/_head/_head-mobile-span/hm-span' as *;
 @use './phone.blocks/_body/body' as *;
@@ -50,3 +65,9 @@
 @use './phone.blocks/_hero1/_button/button' as *;
 @use './phone.blocks/_hero1/_promo/promo' as *;
 @use './phone.blocks/_hero1/_bg-blur/bg_blur' as *;
+
+@use './phone.blocks/_hero2/hero2' as *;
+@use './phone.blocks/_hero2/_description/description' as *;
+@use './phone.blocks/_hero2/_description/_title/title' as *;
+@use './phone.blocks/_hero2/_button-slider/button-slider' as *;
+@use './phone.blocks/_hero2/_description/_slider/slider' as *;

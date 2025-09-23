@@ -1,0 +1,25 @@
+@media (max-width: 1178px){
+    .hero2{
+        &__content{
+            max-width: 720px;
+        }
+
+        &__block1{
+            padding: 60px 16px 60px 16px;
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .hero2{
+        &__content{
+            max-width: 361px;
+        }
+
+       &__block1{
+            max-width: 100%;
+            padding: 60px 0px 60px 0px;
+        }
+    }
+}
+

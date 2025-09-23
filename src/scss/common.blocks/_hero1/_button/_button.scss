@@ -16,6 +16,12 @@
         border: 0px;
         margin-top: 19.5px;
 
+        transition: all 0s ease;
+
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+
         &:active{
             background: rgba(55, 146, 253, 1);
         }

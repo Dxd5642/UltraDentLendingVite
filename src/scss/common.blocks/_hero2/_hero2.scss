@@ -1,0 +1,16 @@
+.hero2{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+    &__content{
+        width: 100%;
+        max-width: 1640px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__block1{
+        padding: 60px 16px 113px 16px;
+    }
+}
