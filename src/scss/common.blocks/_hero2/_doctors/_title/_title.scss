@@ -1,0 +1,43 @@
+@use '../../../../fonts';
+
+@mixin work-sans($size, $style, $weight, $line-height, $letter-spacing) {
+  @include fonts.Work-sans($size, $style, $weight, $line-height, $letter-spacing);
+}
+
+
+.hero2{
+    &__title-doctor{
+        height: auto;
+        width: auto;
+        margin-right: auto;
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+
+        &-2{
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.5s ease-in-out 0.4s;
+        }
+    }
+
+    &__doctor-fio{
+        @include work-sans(28px, normal, 700, 100%, -0.05em);
+        color: rgba(45, 45, 45, 1);
+    }
+}
+
+.doctor{
+    display: flex;
+    &-fullname{
+        font-size: 20px;
+        font-weight: 500;
+        color: rgba(45, 45, 45, 0.8);
+    }
+
+    &-job{
+        @include work-sans(18px, italic, 600, 100%, -0.05em);
+        color: rgba(54, 122, 202, 1);
+    }
+}

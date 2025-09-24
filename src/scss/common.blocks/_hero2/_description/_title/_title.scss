@@ -19,14 +19,18 @@
     &__title{
         @include fonts.Work-sans(34px, normal, 800, 120%, 0em);
         text-transform: uppercase;
-        color: rgb(54, 122, 202);
+        color: rgb(45, 45, 45);        
 
-        &-line_black{
-            color: rgb(45, 45, 45);
+        &-line_blue{
+            color: rgb(54, 122, 202);
         }
 
         &-dash{
             font-weight: 100;
+        }
+
+        &_center{
+            text-align: center;
         }
     }
 

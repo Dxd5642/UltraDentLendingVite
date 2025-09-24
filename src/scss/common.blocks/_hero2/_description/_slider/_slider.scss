@@ -12,8 +12,8 @@
         height: 606px;
         overflow: hidden;
         position: relative;
-        cursor: grab;
         transition: cursor 0s ease;
+        cursor: grab;
             &:active{
                 cursor: grabbing;
             }

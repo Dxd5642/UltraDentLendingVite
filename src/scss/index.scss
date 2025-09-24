@@ -21,6 +21,13 @@
 @use './common.blocks/_hero2/_description/_title/title' as *;
 @use './common.blocks/_hero2/_button-slider/button-slider' as *;
 @use './common.blocks/_hero2/_description/_slider/slider' as *;
+@use './common.blocks/_hero2/_doctors/doctors' as *;
+@use './common.blocks/_hero2/_doctors/_block/block' as *;
+@use './common.blocks/_hero2/_doctors/_title/title' as *;
+@use './common.blocks/_hero2/_doctor/doctor' as *;
+@use './common.blocks/_hero2/_doctor/_button/button' as *;
+@use './common.blocks/_hero2/_doctor/_title/title' as *;
+@use './common.blocks/_hero2/_message/message' as *;
 
 
 //  Notebook adaptation

@@ -1,0 +1,90 @@
+.hero2__choice-doctor{
+    overflow-x: clip;
+    background-color: rgba(65, 64, 77, 1);
+    width: 1016px;
+    height: 635px;
+    border-radius: 16px;
+    display: flex;
+    position: relative;
+}
+
+.doctor{
+    width: 1016px;
+    height: 100%;
+    position: relative;
+    opacity: 0;
+    scale: 0.8;
+    transition: all 0.5s ease-in-out;
+
+    &.active{
+        opacity: 1;
+        scale: 1;
+
+        .hero2__title-doctor-2{
+            opacity: 1;
+            transform: translate(0px);
+        }
+
+        .hero2__work-experience{
+            opacity: 1;
+            transform: translate(0px);
+        }
+
+        .doctor-btn-record{
+            opacity: 1;
+            width: 100%;
+        }
+
+        .doctor-btn-record__text{
+            opacity: 1;
+        }
+
+        .hero2__message{
+            width: 400px;
+            opacity: 1;
+        }
+
+        .message__text{
+            opacity: 1;
+        }
+
+        .hero2_decorate{
+            animation: dsin 0.3s ease-in-out 1.4s;
+        }
+    }
+
+    &-description{
+        width: 398px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+        align-self: flex-end;
+
+    }
+}
+
+.choice-doctor-img{
+    width: 559px;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.hero2__doctor-block{
+    display: flex;
+}
+
+@keyframes dsin{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

@@ -1,0 +1,10 @@
+.hero2{
+    &__doctors{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 23px;
+    }
+}

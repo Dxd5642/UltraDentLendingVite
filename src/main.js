@@ -53,6 +53,12 @@ const map_departments__btn_close = document.querySelector(".map-departments__btn
 const backblur = document.querySelector(".backblur");
 const map_departments = document.querySelector(".map-departments");
 
+const map_departments__map = document.querySelector(".map-departments__map")
+const map_departments__title = document.querySelector(".map-departments__title")
+const map_departments__time = document.querySelector(".map-departments__time")
+const map_departments__btn = document.querySelectorAll(".map-departments__btn")
+
+
 document.addEventListener('DOMContentLoaded', function() {
     btn_departments.addEventListener('click', open_map_departments);
 });
@@ -72,6 +78,14 @@ document.addEventListener('DOMContentLoaded', function() {
 function open_map_departments(){
     backblur.classList.toggle("active");
     map_departments.classList.toggle("active");
+
+    map_departments__map.classList.toggle("active")
+    map_departments__title.classList.toggle("active")
+    map_departments__time.classList.toggle("active")
+    map_departments__btn.forEach(i => {i.classList.toggle('active')})
+    map_departments__btn_record.classList.remove("active")
+    map_departments__btn_record_txt.classList.remove("active")
+
     body.classList.toggle("no_scroll")
 }
 
@@ -97,24 +111,28 @@ document.addEventListener('DOMContentLoaded', function() {
 function choise_department(num){
     let txt = ''
     switch(num){
-        case 1: txt = 'Широтную'; console.log(1); break;
-        case 2: txt = 'Челюскинцев'; console.log(2); break;
-        case 3: txt = 'Республике'; console.log(3); break;
+        case 1: txt = 'Широтную'; break;
+        case 2: txt = 'Челюскинцев'; break;
+        case 3: txt = 'Республике'; break;
         default: break;
     }
+    map_departments__btn_record_txt.classList.add("active")
     map_departments__btn_record.classList.add("active")
     map_departments__btn_record_txt.innerHTML = `Записаться на прием на ${txt}`
 }
 
 
 class HeroSlider {
-    constructor() {
-        this.slider = document.querySelector('.hero2__slider');
-        this.track = document.querySelector('.hero2__slides');
-        this.slides = document.querySelectorAll('.hero2__slide');
-        this.prevBtn = document.querySelector('.hero2__btn-slider_left');
-        this.nextBtn = document.querySelector('.hero2__btn-slider_right');
+    constructor(slider, track, slides, prevBtn, nextBtn, width, isDragable = true, slider2 = null) {
+        this.slider = slider;
+        this.track = track;
+        this.slides = slides;
+        this.prevBtn = prevBtn;
+        this.nextBtn = nextBtn;
+        this.width = width
         this.currentIndex = 0;
+        this.isDragable = isDragable;
+        this.slider2 = slider2
         
         this.startX = 0;
         this.currentX = 0;
@@ -124,30 +142,42 @@ class HeroSlider {
     }
     
     init() {
+        
+        if (this.slider2) {
+        this.slider2.forEach((frame, index) => {
+            frame.addEventListener('click', () => {
+                this.goToSlide(index);
+            });
+        });
+    }
         this.prevBtn.addEventListener('click', () => this.prevSlide());
         this.nextBtn.addEventListener('click', () => this.nextSlide());
-        
-        this.slider.addEventListener('mousedown', this.startDrag.bind(this));
-        document.addEventListener('mousemove', this.drag.bind(this));
-        document.addEventListener('mouseup', this.endDrag.bind(this));
-        
-        this.slider.addEventListener('touchstart', this.startDrag.bind(this));
-        this.slider.addEventListener('touchmove', this.drag.bind(this));
-        this.slider.addEventListener('touchend', this.endDrag.bind(this));
-        
-        this.slider.addEventListener('dragstart', (e) => e.preventDefault());
+
+        if(this.isDragable){
+            
+            this.slider.addEventListener('mousedown', this.startDrag.bind(this));
+            document.addEventListener('mousemove', this.drag.bind(this));
+            document.addEventListener('mouseup', this.endDrag.bind(this));
+            
+            this.slider.addEventListener('touchstart', this.startDrag.bind(this));
+            this.slider.addEventListener('touchmove', this.drag.bind(this));
+            this.slider.addEventListener('touchend', this.endDrag.bind(this));
+            
+            this.slider.addEventListener('dragstart', (e) => e.preventDefault());
+        }
         
         this.updateSlider();
     }
     
     startDrag(e) {
+        if (!this.isDraggable) return;
         this.isDragging = true;
         this.startX = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
         this.track.style.transition = 'none';
     }
     
     drag(e) {
-        if (!this.isDragging) return;
+        if (!this.isDragging || !this.isDraggable) return;
         
         this.currentX = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
         const diff = this.currentX - this.startX;
@@ -162,7 +192,7 @@ class HeroSlider {
         }
         
         const limitedDiff = diff * resistance;
-        this.track.style.transform = `translateX(calc(-${this.currentIndex * 100}% + ${limitedDiff}px))`;
+        this.track.style.transform = `translateX(calc(-${this.currentIndex * this.width}% + ${limitedDiff}px))`;
     }
     
     endDrag() {
@@ -207,27 +237,47 @@ class HeroSlider {
     }
     
     updateSlider() {
-        this.track.style.transform = `translateX(-${this.currentIndex * 100}%)`;
+        this.track.style.transform = `translateX(-${this.currentIndex * this.width}%)`;
         
         this.prevBtn.disabled = this.currentIndex === 0;
         this.nextBtn.disabled = this.currentIndex === this.slides.length - 1;
+
+        this.slides.forEach(slide => slide.classList.remove('active'));
+        this.slides[this.currentIndex].classList.add('active');
+
+        if(this.slider2){
+            this.slider2.forEach(frame => frame.classList.remove("active"));
+            this.slider2[this.currentIndex].classList.add("active")
+        }
         
         this.prevBtn.classList.toggle('disabled', this.currentIndex === 0);
         this.nextBtn.classList.toggle('disabled', this.currentIndex === this.slides.length - 1);
     }
 }
 
-const style = document.createElement('style');
-style.textContent = `
-    .hero2__btn-slider.disabled {
-        opacity: 0.5;
-        cursor: not-allowed;
-        pointer-events: none;
-    }
-
-`;
-document.head.appendChild(style);
 
 document.addEventListener('DOMContentLoaded', () => {
-    new HeroSlider();
+    new HeroSlider(
+        document.querySelector('.hero2__slider'), 
+        document.querySelector('.hero2__slides'), 
+        document.querySelectorAll('.hero2__slide'),
+        document.querySelector('.hero2__btn-slider_left'),
+        document.querySelector('.hero2__btn-slider_right'),
+        100
+    );
+});
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    new HeroSlider(
+        document.querySelector(".hero2__choice-doctor"),
+        document.querySelector(".hero2__doctor-block"),
+        document.querySelectorAll(".doctor"),
+        document.querySelector(".hero2__btn-slider_left-d"),
+        document.querySelector(".hero2__btn-slider_right-d"),
+        33.3,
+        false,
+        document.querySelectorAll(".hero2__blocks-doctors")
+    );
 });

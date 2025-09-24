@@ -1,0 +1,68 @@
+@use '../../../fonts';
+
+@mixin work-sans($size, $style, $weight, $line-height, $letter-spacing) {
+  @include fonts.Work-sans($size, $style, $weight, $line-height, $letter-spacing);
+}
+
+.hero2__message{
+    width: 60px;
+    height: 130px;
+    background-color: rgba(243, 243, 243, 1);
+    -webkit-backdrop-filter: blur(22px);
+    backdrop-filter: blur(22px);
+    padding: 16px;
+    border-radius: 16px;
+    position: absolute;
+    top: 44px;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out 0.9s;
+
+    &_d2{
+        left: 15%;
+    }
+
+    &_d3{
+        left: 15%;
+    }
+
+}
+.message{
+    &__text{
+        @include work-sans(16px, normal, 400, 100%, -0.05em);
+        color: rgba(68, 76, 84, 1);
+        width: 80%;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out 1.1s;
+
+        &_bold{
+            font-weight: 600;
+        }
+
+        &_blue{
+            font-style: italic;
+            color: rgb(54, 122, 202);
+            font-weight: 600;
+        }
+    }
+
+    &__decorate{
+        position: absolute;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-bottom: 50px solid rgba(243, 243, 243, 1);
+        max-width: 0px;
+        max-height: 0px;
+        transform: rotate(90deg);
+        top: 19.5px;
+        right: -40px;
+    }
+}
+
+.hero2_decorate{
+    width: 30px;
+    height: 20px;
+}
