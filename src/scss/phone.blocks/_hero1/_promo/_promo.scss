@@ -12,12 +12,13 @@
             transform: translateX(-5px);
         }
     }
+
 }
 
 @media (max-width: 483px){
     .promo{
         max-width: 268px;
-        max-height: 91px;
+        max-height: 90px;
         padding: 10px 15px;
         transform: translateX(23px);
         margin-top: 29px;
@@ -27,11 +28,16 @@
         }
 
         &__price{
-            height: 41px;
+            height: 63px;
+            scale: 68%;
+            width: 360px;
+            margin-top: 0px;
+            background-image: url("../../../../assets/images/border-promo/Price.png");
+            transform: translateX(-90px);
         }
 
         &__price-value{
-            font-size: 24px;
+            font-size: 37px;
         }
 
         &__details{

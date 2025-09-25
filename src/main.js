@@ -1,7 +1,5 @@
 import './scss/index.scss';
 
-
-
 const body = document.querySelector("body")
 const head = document.querySelector(".head")
 const preloader = document.getElementById('preloader');
@@ -170,14 +168,14 @@ class HeroSlider {
     }
     
     startDrag(e) {
-        if (!this.isDraggable) return;
+        if (!this.isDragable) return;
         this.isDragging = true;
         this.startX = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
         this.track.style.transition = 'none';
     }
     
     drag(e) {
-        if (!this.isDragging || !this.isDraggable) return;
+        if (!this.isDragging || !this.isDragable) return;
         
         this.currentX = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
         const diff = this.currentX - this.startX;
@@ -263,7 +261,8 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.hero2__slide'),
         document.querySelector('.hero2__btn-slider_left'),
         document.querySelector('.hero2__btn-slider_right'),
-        100
+        100,
+        true,
     );
 });
 
@@ -281,3 +280,8 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll(".hero2__blocks-doctors")
     );
 });
+
+if (window.matchMedia("(max-width: 768px)").matches){
+    window.addEventListener("scroll", () => {setTimeout(() => {head.classList.add("scroll")}, 200)})
+    window.addEventListener("scrollend", () => {setTimeout(() => {head.classList.remove("scroll")}, 200)})
+}

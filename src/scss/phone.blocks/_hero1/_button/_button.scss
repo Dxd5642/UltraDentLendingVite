@@ -3,6 +3,16 @@
         &__button{
             border-radius: 8px;
             padding: 12px 16px;
+
+            &:hover{
+                background-color: rgba(54, 122, 202, 1);
+                transform: unset;
+            }
+            
+            &:active{
+                transform: scale(90%);
+                background-color: rgba(55, 146, 253, 1);
+            }
         }
     }
 

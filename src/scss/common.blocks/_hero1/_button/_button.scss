@@ -22,8 +22,16 @@
         -webkit-tap-highlight-color: transparent;
         outline: none;
 
-        &:active{
+           transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    
+
+        &:hover{
             background: rgba(55, 146, 253, 1);
+            transform: translate(0, -0.25rem);
+        }
+        
+        &:active{
+            transform: scale(90%);
         }
     }
 

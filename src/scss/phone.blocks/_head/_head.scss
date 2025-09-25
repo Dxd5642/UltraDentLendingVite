@@ -1,9 +1,6 @@
 @use '../../common.blocks/_container/container';
 @use '../../fonts';
 
-
-
-
 @media (max-width: 1068px){
     .container{
         display: flex;
@@ -63,12 +60,50 @@
             justify-content: center;
             gap: 16px;
             margin-left: auto;
-            
+            transition: all 0s ease;
+
+            &:hover{
+                transform: translate(0);
+                .header__div3__img{
+                            background-image: url("../../../assets/svg/call-me/default.svg");
+                        }
+            }
+
+            &:active{
+                transform: unset;
+                .header__div3__img{
+                            background-image: url("../../../assets/svg/call-me/default.svg");
+                        }
+            }
+
+            &_d{
+                transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+                &:hover{
+                    transform: unset;
+                }
+
+                &:active{
+                    transform: scale(95%);
+                }
+
+                &-1{
+                    &:active{
+                        .header__div3__img{
+                            background-image: url("../../../assets/svg/call-me/hover.svg");
+                        }
+                    }
+                }
+            } 
         }
 
         &__div3__img{
             width: 40px;
             height: 40px;
+
+            &:active{
+                transform: scale(90%);
+            }
         }
 
         &__div3__p{
@@ -91,6 +126,16 @@
             font-size: 14px;
             box-shadow: 0px 12px 100px rgba(180, 207, 238, 0.9);
             min-height: 52px;
+
+            &:hover{
+                background-color: rgba(54, 122, 202, 1);
+                transform: unset;
+            }
+            
+            &:active{
+                transform: scale(90%);
+                background-color: rgba(55, 146, 253, 1);
+            }
         }
 
         &__menu-mobile{
