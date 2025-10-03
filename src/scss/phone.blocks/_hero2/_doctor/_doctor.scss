@@ -1,0 +1,124 @@
+@media (max-width: 1184px){
+    .hero2__choice-doctor{
+        width: 720px;
+        height: 450px;
+    }
+
+    .doctor{
+        width: 720px;
+
+        &.active{
+            
+
+            .hero2__message{
+                width: 279px;
+            }
+
+            .message__text{
+                
+            }
+
+            .hero2_decorate{
+                
+            }
+        }
+
+        &-description{
+            width: 282px;
+            margin-left: 40px;
+            margin-bottom: 40px;
+            gap: 18px;
+        }
+    }
+
+    .choice-doctor-img{
+        width: 396px;
+    }
+
+    .hero2__doctor-block{
+        
+    }
+
+    @keyframes dsin{
+        0%{
+            transform: translateY(0px);
+        }
+        50%{
+            transform: translateY(5px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+    }
+}
+
+@media(max-width: 750px){
+    .hero2__choice-doctor{
+        width: 361px;
+        height: 328px;
+        overflow: hidden;
+    }
+
+    .doctor{
+        width: 361px;
+
+        &-description{
+            width: 100%;
+            margin: 0px 10px 10px 10px;
+            gap: 18px;
+            z-index: 5;
+        }
+    }
+
+    .choice-doctor-img{
+        width: 254px;
+        z-index: 1;
+        bottom: -20px;
+        right: -52px;
+
+        &-2{
+            right: -75px;
+            bottom: -1px;
+        }
+
+        &-3{
+            right: -84px;
+            bottom: 0px;
+        }
+    }
+}
+
+@media (max-width: 394px){
+    .hero2__choice-doctor{
+        width: 100%;
+        height: 328px;
+    }
+
+    .doctor{
+        width: calc(100dvw - 32px);
+
+        &-description{
+            width: 100%;
+            margin: 0px 10px 10px 10px;
+            gap: 18px;
+            z-index: 5;
+        }
+    }
+
+    .choice-doctor-img{
+        width: 240px;
+        z-index: 1;
+        bottom: -20px;
+        right: -52px;
+
+        &-2{
+            right: -75px;
+            bottom: -1px;
+        }
+
+        &-3{
+            right: -84px;
+            bottom: 0px;
+        }
+    }
+}

@@ -38,5 +38,16 @@ $breakpoints: (
       
       height: 100%;
     }
+
+    &__btn-record{
+      &:hover{
+          background-color: rgba(54, 122, 202, 1);
+          transform: unset;
+        }
+      &:active{
+          background-color: rgba(55, 146, 253, 1);
+          transform: scale(95%);
+      }
+    }
   }
 }

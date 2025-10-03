@@ -1,0 +1,22 @@
+
+@media (max-width: 674px){
+    .hero3__{
+        &btn-slider_left{
+            position: absolute;
+            bottom: -80px;
+            transform: translateX(-29px);
+            &:hover{
+                
+            }
+        }
+
+        &btn-slider_right{
+            position: absolute;
+            bottom: -80px;
+            transform: translateX(29px);
+            &:hover{
+                
+            }
+        }
+    }
+}

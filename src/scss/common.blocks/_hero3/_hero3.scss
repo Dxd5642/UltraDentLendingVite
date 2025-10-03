@@ -1,0 +1,32 @@
+.hero3{
+    width: 100%;
+    height: 665px;
+    overflow: hidden;
+    background: #41404D;
+
+    &__content{
+        width: 100%;
+        max-width: 1640px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__block1{
+        display: flex;
+        margin: 0px 112px 0px 112px;
+        align-self: normal;
+        gap: 16px;
+    }
+
+     &__block2{
+        margin-top: 32px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: center;
+        position: relative;
+     }
+}

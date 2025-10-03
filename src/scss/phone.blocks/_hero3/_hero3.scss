@@ -1,0 +1,45 @@
+@media (max-width: 1040px){
+    .hero3{
+        height: unset;
+        padding-bottom: 112px;
+        &__block1{
+            min-width: unset;
+            align-items: center;
+            gap: 32px;
+            padding-top: 32px;
+        }
+
+    }
+}
+
+@media (max-width: 808px){
+    .hero3{
+        &__block1{
+            flex-direction: column;
+        }
+
+        &__block2{
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 481px){
+    .hero3{
+        &__block1{
+            margin: 0px;
+        }
+
+        &__block2{
+            
+        }
+    }
+}
+
+@media (max-width: 389px){
+    .hero3{
+        &__block2{
+            max-width: 100%;
+        }
+    }
+}

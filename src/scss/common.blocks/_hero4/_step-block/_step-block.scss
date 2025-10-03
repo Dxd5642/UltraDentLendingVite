@@ -1,0 +1,8 @@
+.hero4{
+    &__step-block{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        position: absolute;
+    }
+}

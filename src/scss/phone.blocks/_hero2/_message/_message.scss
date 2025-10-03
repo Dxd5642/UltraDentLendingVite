@@ -1,0 +1,90 @@
+@media (max-width: 1184px){
+    .hero2__message{
+        height: 110px;
+        padding: 10px;
+
+        &_d2{
+            
+        }
+
+        &_d3{
+            
+        }
+
+    }
+    .message{
+        &__text{
+            font-size: 14px;
+
+            &_bold{
+                
+            }
+
+            &_blue{
+                
+            }
+        }
+
+        &__decorate{
+            border-left: 17.5px solid transparent;
+            border-right: 17.5px solid transparent;
+            border-bottom: 35px solid rgba(243, 243, 243, 1);
+            right: -32px;
+        }
+    }
+
+    .hero2_decorate{
+        
+    }
+}
+
+@media (max-width: 750px){
+    .hero2__message{
+        max-width: 230px;
+        height: 115px;
+        padding: 8px;
+        font-weight: 600;
+        top: 10px;
+        left: 10px;
+        z-index: 5;
+    }
+    .message{
+        &__text{
+            font-size: 13px;
+        }
+
+        &__decorate{
+            border-left: 17.5px solid transparent;
+            border-right: 17.5px solid transparent;
+            border-bottom: 35px solid rgba(243, 243, 243, 1);
+            right: -15px;
+            top: 72.5px;
+        }
+    }
+}
+
+@media (max-width: 394px){
+    .hero2__message{
+        max-width: 60%;
+        height: 115px;
+        padding: 8px;
+        font-weight: 600;
+        top: 10px;
+        left: 10px;
+        z-index: 5;
+        gap: 8px;
+    }
+    .message{
+        &__text{
+            font-size: 12px;
+        }
+
+        &__decorate{
+            border-left: 17.5px solid transparent;
+            border-right: 17.5px solid transparent;
+            border-bottom: 35px solid rgba(243, 243, 243, 1);
+            right: -15px;
+            top: 72.5px;
+        }
+    }
+}

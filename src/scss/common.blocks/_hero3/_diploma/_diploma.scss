@@ -1,0 +1,28 @@
+
+.hero3{
+    &__diploma{
+        &_eff{
+            width: auto;
+            height: auto;
+        }
+
+        &-img{
+            height: 347px;
+            width: auto;
+        }
+
+        &-block{
+            width: 100%;
+            max-width: 1414px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-mblock{
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@media (max-width: 1184px){
+    .hero2{
+        &__vet{
+            flex-direction: column;
+            align-items: center;
+            width: 100dvw;
+            padding: 0px 16px 0px 16px;
+            gap: 36px;
+            display: flex;
+        }
+
+        &__blocks-doctors{
+            width: 426px;
+            height: 200px;
+            
+            &-img{
+                width: 178px;
+            }
+        }
+    }   
+}
+
+
+
+@media (max-width: 1094px){
+    .hero2{
+        &__vet{
+            gap: 16px;
+        }
+
+        &__blocks-doctors{
+            width: 197px;
+            height: 88px;
+            
+            &-img{
+                width: 78px;
+            }
+        }
+    }   
+}

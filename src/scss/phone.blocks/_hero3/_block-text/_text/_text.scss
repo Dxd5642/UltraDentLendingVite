@@ -1,0 +1,17 @@
+@media (max-width: 1040px){
+    .hero3{
+        &__text{
+            font-size: 16px;
+            line-height: 24px;
+            padding: 0px;
+        }
+    }
+}
+
+@media (max-width: 435px){
+    .hero3{
+        &__text{
+            line-height: clamp(16px, 5dvw, 24px);
+        }
+    }
+}

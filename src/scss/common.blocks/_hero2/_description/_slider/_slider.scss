@@ -51,6 +51,12 @@
         background-repeat: no-repeat;
         background-size: cover;
         
+        &_padding{
+            width: 100%;
+            // border-left: 16px solid white;
+            border-right: 16px solid white;
+        }
+        
 
         &1{
             background-image: url('../../../../../assets/images/hero2__slide1.png');

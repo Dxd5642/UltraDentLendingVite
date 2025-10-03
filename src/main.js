@@ -121,7 +121,7 @@ function choise_department(num){
 
 
 class HeroSlider {
-    constructor(slider, track, slides, prevBtn, nextBtn, width, isDragable = true, slider2 = null) {
+    constructor(slider, track, slides, prevBtn, nextBtn, width, isDragable = true, slider2 = null, num_available_scrolling = Infinity) {
         this.slider = slider;
         this.track = track;
         this.slides = slides;
@@ -135,6 +135,8 @@ class HeroSlider {
         this.startX = 0;
         this.currentX = 0;
         this.isDragging = false;
+        this.num_available_scrolling = num_available_scrolling;
+        this.num_scrolling = 0
         
         this.init();
     }
@@ -165,6 +167,10 @@ class HeroSlider {
         }
         
         this.updateSlider();
+    }
+
+    changeCurrentX(newValue){
+        this.currentX = newValue;
     }
     
     startDrag(e) {
@@ -214,6 +220,7 @@ class HeroSlider {
     nextSlide() {
         if (this.currentIndex < this.slides.length - 1) {
             this.currentIndex++;
+            this.num_scrolling++;
             this.goToSlide(this.currentIndex);
         } else {
             this.goToSlide(this.currentIndex);
@@ -223,6 +230,7 @@ class HeroSlider {
     prevSlide() {
         if (this.currentIndex > 0) {
             this.currentIndex--;
+            this.num_scrolling--;
             this.goToSlide(this.currentIndex);
         } else {
             this.goToSlide(this.currentIndex);
@@ -246,10 +254,11 @@ class HeroSlider {
         if(this.slider2){
             this.slider2.forEach(frame => frame.classList.remove("active"));
             this.slider2[this.currentIndex].classList.add("active")
+            changeTransformBlockDoctors(this.currentIndex)
         }
-        
+
         this.prevBtn.classList.toggle('disabled', this.currentIndex === 0);
-        this.nextBtn.classList.toggle('disabled', this.currentIndex === this.slides.length - 1);
+        this.nextBtn.classList.toggle('disabled', (this.currentIndex === this.slides.length - 1 || this.num_scrolling == this.num_available_scrolling));
     }
 }
 
@@ -266,8 +275,6 @@ document.addEventListener('DOMContentLoaded', () => {
     );
 });
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
     new HeroSlider(
         document.querySelector(".hero2__choice-doctor"),
@@ -281,7 +288,85 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 });
 
-if (window.matchMedia("(max-width: 768px)").matches){
+if (window.matchMedia("(max-width: 768px)").matches && ('ontouchstart' in window || navigator.maxTouchPoints > 0)){
     window.addEventListener("scroll", () => {setTimeout(() => {head.classList.add("scroll")}, 200)})
     window.addEventListener("scrollend", () => {setTimeout(() => {head.classList.remove("scroll")}, 200)})
+}
+
+const block_with_doctors = document.querySelector(".hero2__doctors");
+
+function changeTransformBlockDoctors(index){
+    if ((window.matchMedia("(max-width: 586px)").matches))
+        {
+        switch (index){
+            case 0: block_with_doctors.style="align-self: start;"; break;
+            case 1: block_with_doctors.style="align-self: center;"; break;
+            case 2: block_with_doctors.style="align-self: end;"; break;
+        }
+    }
+}
+
+
+if (window.matchMedia("(max-width: 360px)").matches){
+    document.addEventListener("DOMContentLoaded", () => {
+        new HeroSlider(
+            document.querySelector(".hero3__diploma-mblock"),
+            document.querySelector(".hero3__diploma-block"),
+            document.querySelectorAll(".hero3__diploma_eff"),
+            document.querySelector(".hero3__btn-slider_left"),
+            document.querySelector(".hero3__btn-slider_right"),
+            33.9,
+            false,
+            false,
+            2,
+        );
+    });
+}
+
+else if (window.matchMedia("(max-width: 390px)").matches){
+    document.addEventListener("DOMContentLoaded", () => {
+        new HeroSlider(
+            document.querySelector(".hero3__diploma-mblock"),
+            document.querySelector(".hero3__diploma-block"),
+            document.querySelectorAll(".hero3__diploma_eff"),
+            document.querySelector(".hero3__btn-slider_left"),
+            document.querySelector(".hero3__btn-slider_right"),
+            33.7,
+            false,
+            false,
+            2,
+        );
+    });
+}
+
+else if (window.matchMedia("(max-width: 1150px)").matches){
+    document.addEventListener("DOMContentLoaded", () => {
+        new HeroSlider(
+            document.querySelector(".hero3__diploma-mblock"),
+            document.querySelector(".hero3__diploma-block"),
+            document.querySelectorAll(".hero3__diploma_eff"),
+            document.querySelector(".hero3__btn-slider_left"),
+            document.querySelector(".hero3__btn-slider_right"),
+            34,
+            false,
+            false,
+            2,
+        );
+    });
+}
+
+else if (window.matchMedia("(max-width: 1380px)").matches){
+    document.addEventListener("DOMContentLoaded", () => {
+        new HeroSlider(
+            document.querySelector(".hero3__diploma-mblock"),
+            document.querySelector(".hero3__diploma-block"),
+            document.querySelectorAll(".hero3__diploma_eff"),
+            document.querySelector(".hero3__btn-slider_left"),
+            document.querySelector(".hero3__btn-slider_right"),
+            25,
+            false,
+            false,
+            1,
+        );
+    });
 }

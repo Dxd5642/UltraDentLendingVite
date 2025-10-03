@@ -1,0 +1,11 @@
+@media (max-width: 1380px){
+    .hero3__{
+        &btn-slider_left{
+            visibility: visible;
+        }
+
+        &btn-slider_right{
+            visibility: visible;
+        }
+    }
+}

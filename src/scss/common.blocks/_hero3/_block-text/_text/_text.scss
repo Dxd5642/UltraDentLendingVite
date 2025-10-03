@@ -1,0 +1,12 @@
+@use '../../../../fonts';
+
+.hero3{
+    &__text{
+        @include fonts.Montserrat(24px, normal, 350, 100%, -0.05em);
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 24px 0px 24px 0px;
+    }
+}

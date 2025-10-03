@@ -1,0 +1,13 @@
+.hero4{
+    &__blur-block{
+        background-color: rgba(242, 242, 242, 0.8);
+        backdrop-filter: blur(22px);
+        -webkit-backdrop-filter: blur(22px);
+        display: flex;
+        max-width: 660px;
+        padding: 48px 24px;
+        flex-direction: column;
+        gap: 16px;
+        border-radius: 16px;
+    }
+}

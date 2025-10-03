@@ -1,0 +1,27 @@
+.hero3__{
+    &btn-slider_left{
+        visibility: hidden;
+        background-color: #41404D;
+
+        &:hover{
+            border-color: white;
+
+            .icon{
+                background-image: url('../../../../assets/svg/btn-slider/btn-slider_left_white.svg');
+            }
+        }
+    }
+
+    &btn-slider_right{
+        visibility: hidden;
+        background-color: #41404D;
+
+        &:hover{
+            border-color: white;
+
+            .icon{
+                background-image: url('../../../../assets/svg/btn-slider/btn-slider_right_white.svg');
+            }
+        }
+    }
+}

@@ -29,6 +29,26 @@
 @use './common.blocks/_hero2/_doctor/_title/title' as *;
 @use './common.blocks/_hero2/_message/message' as *;
 
+@use './common.blocks/_hero3/hero3' as *;
+@use './common.blocks/_hero3/_block-text/block-text' as *;
+@use './common.blocks/_hero3/_block-text/_img/img' as *;
+@use './common.blocks/_hero3/_block-text/_text/text' as *;
+@use './common.blocks/_hero3/_btn-slider/btn-slider' as *;
+@use './common.blocks/_hero3/_diploma/diploma' as *;
+
+@use './common.blocks/_hero4/hero4' as *;
+@use './common.blocks/_hero4/_blur-block/blur-block' as *;
+@use './common.blocks/_hero4/_step-block/step-block' as *;
+@use './common.blocks/_hero4/_text/text' as *;
+@use './common.blocks/_hero4/_title-text/title-text' as *;
+@use './common.blocks/_hero4/_img/img' as *;
+
+@use './common.blocks/_hero4/_reference/reference' as *;
+@use './common.blocks/_hero4/_reference/_body/body' as *;
+@use './common.blocks/_hero4/_reference/_body/_text/text' as *;
+@use './common.blocks/_hero4/_reference/_header/header' as *;
+@use './common.blocks/_hero4/_reference/_body/_img/img' as *;
+
 
 //  Notebook adaptation
 @use './notebook.blocks/_container/container' as *;
@@ -52,6 +72,18 @@
 @use './notebook.blocks/_hero2/_description/_title/title' as *;
 @use './notebook.blocks/_hero2/_button-slider/button-slider' as *;
 @use './notebook.blocks/_hero2/_description/_slider/slider' as *;
+@use './notebook.blocks/_hero2/_doctors/doctors' as *;
+@use './notebook.blocks/_hero2/_doctors/_block/block' as *;
+@use './notebook.blocks/_hero2/_doctors/_title/title' as *;
+@use './notebook.blocks/_hero2/_doctor/doctor' as *;
+@use './notebook.blocks/_hero2/_doctor/_button/button' as *;
+@use './notebook.blocks/_hero2/_doctor/_title/title' as *;
+@use './notebook.blocks/_hero2/_message/message' as *;
+
+@use './notebook.blocks/_hero3/hero3' as *;
+@use './notebook.blocks/_hero3/_diploma/diploma' as *;
+@use './notebook.blocks/_hero3/_btn-slider/btn-slider' as *;
+@use './notebook.blocks/_hero3/_block-text/_text/text' as *;
 
 
 
@@ -78,3 +110,17 @@
 @use './phone.blocks/_hero2/_description/_title/title' as *;
 @use './phone.blocks/_hero2/_button-slider/button-slider' as *;
 @use './phone.blocks/_hero2/_description/_slider/slider' as *;
+@use './phone.blocks/_hero2/_doctors/doctors' as *;
+@use './phone.blocks/_hero2/_doctors/_block/block' as *;
+@use './phone.blocks/_hero2/_doctors/_title/title' as *;
+@use './phone.blocks/_hero2/_doctor/doctor' as *;
+@use './phone.blocks/_hero2/_doctor/_button/button' as *;
+@use './phone.blocks/_hero2/_doctor/_title/title' as *;
+@use './phone.blocks/_hero2/_message/message' as *;
+
+@use './phone.blocks/_hero3/hero3' as *;
+@use './phone.blocks/_hero3/_block-text/block-text' as *;
+@use './phone.blocks/_hero3/_block-text/_text/text' as *;
+@use './phone.blocks/_hero3/_diploma/diploma' as *;
+@use './phone.blocks/_hero3/_btn-slider/btn-slider' as *;
+

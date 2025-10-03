@@ -1,0 +1,22 @@
+@media (max-width: 1600px){
+    .hero2{
+        &__title-doctor{
+            
+
+        }
+
+        &__doctor-fio{
+            font-size: 20px;
+        }
+    }
+
+    .doctor{
+        &-fullname{
+            font-size: 14px;
+        }
+
+        &-job{
+            font-size: 14px;
+        }
+    }
+}

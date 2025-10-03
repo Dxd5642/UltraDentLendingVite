@@ -1,6 +1,11 @@
-@media (max-width: 1178px){
+@media (max-width: 1184px){
     .button-slider{
         right: unset;
         margin: 0px auto;
+    }
+
+    .hero2__btn-slider2{
+        right: unset;
+        transform: translateY(64px);
     }
 }

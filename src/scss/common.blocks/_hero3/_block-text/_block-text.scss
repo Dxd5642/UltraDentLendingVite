@@ -1,0 +1,11 @@
+.hero3{
+    &__block-text{
+        height: auto;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-self: unset;
+        gap: 16px;
+        width: 50%;
+    }
+}

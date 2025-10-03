@@ -1,0 +1,37 @@
+@media (max-width: 1380px){
+    .hero3{
+        &__diploma{
+            &-mblock{
+                width: 1008px;
+                overflow: hidden;
+                justify-content: center;
+            }
+            &-block{
+                width: 1008px;
+                display: flex;
+                justify-content: center;
+                justify-content: space-between;
+                gap: 2dvw;
+            }
+
+            &_eff{
+            }
+        }
+    }
+}
+
+@media (max-width: 1150px){
+    .hero3{
+        &__diploma{
+            &-mblock{
+                width: 749px;
+            }
+            &-block{
+                width: 749px;
+            }
+
+            &_eff{
+            }
+        }
+    }
+}

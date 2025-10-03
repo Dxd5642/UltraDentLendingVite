@@ -1,0 +1,16 @@
+@use '../../../fonts';
+
+.hero4{
+    &__text{
+        @include fonts.Work-sans(15px, normal, 500, 26px, 0%);
+        color: rgba(116, 116, 116, 1);
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__check-mark-div{
+        display: flex;
+        gap: 16px;
+    }
+}

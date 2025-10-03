@@ -6,7 +6,8 @@
   <title>Document</title>
   <script type="module" src="https://unpkg.com/@google/model-viewer@^3.4.0/dist/model-viewer.min.js"></script>
 
-<style>.preloader {
+<style>
+.preloader {
     position: fixed;
     left: 0;
     top: 0;
@@ -139,7 +140,7 @@ body.loaded #content {
         <div class="loader"></div>
 </div>
 
-<section class="head">
+<header class="head">
   <div class="container">
       <header class="header">
         <div class="header__div1">
@@ -181,9 +182,9 @@ body.loaded #content {
       </button>
 <!-- 77777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777 -->
   </div>
-</section>
+</header>
 
-<div class="head2">
+<header class="head2">
   <div class="container chd2">
     <nav class="header header-mobile">
       <div class="header__div3 hm h2">
@@ -221,7 +222,7 @@ body.loaded #content {
       </div>    
     </nav>
   </div>
-</div>
+</header>
 
 <section class="hero1">
   <div class="container hero__container">
@@ -322,6 +323,7 @@ body.loaded #content {
           </div>
           <div class="hero2__slider">
             <div class="hero2__slides">
+              <div class="hero2__slide_padding">
               <div class="hero2__slide hero2__slide1">
                 <div class="hero2__slider-gradient">
                   <div class="hero2__slider-text">
@@ -329,6 +331,8 @@ body.loaded #content {
                   </div>
                 </div>
               </div>
+              </div>
+              <div class="hero2__slide_padding">
               <div class="hero2__slide hero2__slide2">
                 <div class="hero2__slider-gradient">
                   <div class="hero2__slider-text">
@@ -341,6 +345,8 @@ body.loaded #content {
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="hero2__slide_padding">
               <div class="hero2__slide hero2__slide3">
                 <div class="hero2__slider-gradient">
                   <div class="hero2__slider-text">
@@ -357,6 +363,7 @@ body.loaded #content {
                 </div>
               </div>
             </div>
+            </div>
           </div>
           <div class="button-slider">
             <button class="hero2__btn-slider hero2__btn-slider_left"><div class="icon"></div></button>
@@ -370,8 +377,8 @@ body.loaded #content {
         <div class="hero2__vet">
           <div class="hero2__doctors">
             <div class="hero2__blocks-doctors hero2__block-doctor-1">
-              <div class="hero2__title-doctor">
-                <h2 class="hero2__doctor-fio"> <!-- Фио доктора -->
+              <div class="hero2__title-doctor hero2__title-doctor-blocks">
+                <h2 class="hero2__doctor-fio hero2__title-doctor-blocks"> <!-- Фио доктора -->
                   <span class="doctor-surname">Окольников</span> <!-- Фамилия доктора -->
                   <span class="doctor-fullname">Владислав Сергеевич</span> <!-- Имя фамилия доктора-->
                 </h2>
@@ -380,8 +387,8 @@ body.loaded #content {
               <img src="./src/assets/images/men.png" alt="image_doctor" class="hero2__blocks-doctors-img">
             </div>
             <div class="hero2__blocks-doctors hero2__block-doctor-1">
-              <div class="hero2__title-doctor">
-                <h2 class="hero2__doctor-fio"> <!-- Фио доктора -->
+              <div class="hero2__title-doctor hero2__title-doctor-blocks">
+                <h2 class="hero2__doctor-fio hero2__title-doctor-blocks"> <!-- Фио доктора -->
                   <span class="doctor-surname">Аббасов</span> <!-- Фамилия доктора -->
                   <span class="doctor-fullname">Низами Вагифович</span> <!-- Имя фамилия доктора-->
                 </h2>
@@ -390,8 +397,8 @@ body.loaded #content {
               <img src="./src/assets/images/man2.png" alt="image_doctor" class="hero2__blocks-doctors-img">
             </div>
             <div class="hero2__blocks-doctors hero2__block-doctor-1">
-              <div class="hero2__title-doctor">
-                <h2 class="hero2__doctor-fio"> <!-- Фио доктора -->
+              <div class="hero2__title-doctor hero2__title-doctor-blocks">
+                <h2 class="hero2__doctor-fio hero2__title-doctor-blocks"> <!-- Фио доктора -->
                   <span class="doctor-surname">Седельников</span> <!-- Фамилия доктора -->
                   <span class="doctor-fullname">Никита Борисович</span> <!-- Имя фамилия доктора-->
                 </h2>
@@ -410,7 +417,7 @@ body.loaded #content {
                   <span class="doctor-famaly">Окольников</span> <!-- Фамилия доктора -->
                   <span class="doctor-name">Владислав Сергеевич</span> <!-- Имя фамилия доктора-->
                 </h2>
-                <p class="doctor-job doctor-job-white">Хирург-имплантолог</p> <!-- Должность доктора-->
+                <p class="doctor-job doctor-job-white doctor-job-block">Хирург-имплантолог</p> <!-- Должность доктора-->
               </div>
               <div class="hero2__work-experience">
                 <h2 class="hero2__doctor-fio hero2__doctor-fio_t">
@@ -442,7 +449,7 @@ body.loaded #content {
                   <span class="doctor-famaly">Аббасов</span> <!-- Фамилия доктора -->
                   <span class="doctor-name">Низами Вагифович</span> <!-- Имя фамилия доктора-->
                 </h2>
-                <p class="doctor-job">Хирург-имплантолог</p> <!-- Должность доктора-->
+                <p class="doctor-job doctor-job-white doctor-job-block">Хирург-имплантолог</p> <!-- Должность доктора-->
               </div>
               <div class="hero2__work-experience">
                 <h2 class="hero2__doctor-fio hero2__doctor-fio_t">
@@ -456,7 +463,7 @@ body.loaded #content {
               </div>
               <button class="hero1__button doctor-btn-record"><p class="doctor-btn-record__text">Записаться на прием</p><img src="./src/assets/svg/arrow-right.svg" alt='arrow'></button>
             </div>
-            <img src="./src/assets/images/man2.png" alt="men" class="choice-doctor-img">
+            <img src="./src/assets/images/man2.png" alt="men" class="choice-doctor-img choice-doctor-img-2">
             <div class="hero2__message hero2__message_d2">
               <img src="./src/assets/svg/decorate.svg" alt="point" class="hero2_decorate">
               <p class="message__text">2-3 раза в год осваиваем новые методы имплантации. Делимся знаниями с коллегами по всей России.</p>
@@ -471,7 +478,7 @@ body.loaded #content {
                   <span class="doctor-famaly">Седельников</span> <!-- Фамилия доктора -->
                   <span class="doctor-name">Никита Борисович</span> <!-- Имя фамилия доктора-->
                 </h2>
-                <p class="doctor-job">Хирург-имплантолог</p> <!-- Должность доктора-->
+                <p class="doctor-job doctor-job-white doctor-job-block">Хирург-имплантолог</p> <!-- Должность доктора-->
               </div>
               <div class="hero2__work-experience">
                 <h2 class="hero2__doctor-fio hero2__doctor-fio_t">
@@ -485,7 +492,7 @@ body.loaded #content {
               </div>
               <button class="hero1__button doctor-btn-record"><p class="doctor-btn-record__text">Записаться на прием</p><img src="./src/assets/svg/arrow-right.svg" alt='arrow'></button>
             </div>
-            <img src="./src/assets/images/man3.png" alt="men" class="choice-doctor-img">
+            <img src="./src/assets/images/man3.png" alt="men" class="choice-doctor-img choice-doctor-img-3">
             <div class="hero2__message hero2__message_d3">
               <img src="./src/assets/svg/decorate.svg" alt="point" class="hero2_decorate">
               <p class="message__text">Наши знания и навыки помогают добиваться надежных и эстетичных результатов имплантации</p>
@@ -495,7 +502,7 @@ body.loaded #content {
 
             </div>
           </div>
-          <div class="button-slider">
+          <div class="button-slider hero2__btn-slider2">
             <button class="hero2__btn-slider hero2__btn-slider_left hero2__btn-slider_left-d"><div class="icon"></div></button>
             <button class="hero2__btn-slider hero2__btn-slider_right hero2__btn-slider_right-d"><div class="icon"></div></button>
           </div>
@@ -504,6 +511,216 @@ body.loaded #content {
     </div>
   </div>
 </section>
+
+<section class="hero3">
+  <div class="container hero__container">
+    <div class="hero3__content">
+      <div class="hero3__block1">
+        <div class="hero3__block-text hero3__block-text_padding-left">
+          <img src="./src/assets/images/yandex_metka.png" alt="Яндекс метка" class="hero3__img-text">
+          <p class="hero3__text">
+            <span>Врачи «Отделения цифровой имплантации» собрали множество наград и вошли в ТОП рейтингов</span>
+            <span>Выбираете <b>инновационное оборудование</b> и опытных врачей для имплантации <b>с комфортом</b></span>
+          </p>
+        </div>
+        <div class="hero3__block-text">
+          <img src="./src/assets/images/zackuchenie.png" alt="Экспертное заключение" class="hero3__img-text">
+          <p class="hero3__text">
+            <span>
+            <b>Первая в России</b> сеть стоматологий
+            с сертификатом <b>независимого</b>
+            агентства экспертизы и консалтинга
+            «Мед Эксперт Консалт»
+           </span>
+          </p>
+        </div>
+      </div>
+      <div class="hero3__block2">
+        <button class="hero2__btn-slider hero2__btn-slider_left hero3__btn-slider_left"><div class="icon"></div></button>
+        <div class="hero3__diploma-mblock">
+          <div class="hero3__diploma-block">
+            <div class="hero3__diploma_eff">
+              <img src="./src/assets/images/diploms/img1.png" alt="Громота" class="hero3__diploma-img">
+            </div>
+            <div class="hero3__diploma_eff">
+              <img src="./src/assets/images/diploms/img2.png" alt="Громота" class="hero3__diploma-img">
+            </div>
+            <div class="hero3__diploma_eff">
+              <img src="./src/assets/images/diploms/img3.png" alt="Громота" class="hero3__diploma-img">
+            </div>
+            <div class="hero3__diploma_eff">
+              <img src="./src/assets/images/diploms/img4.png" alt="Громота" class="hero3__diploma-img">
+            </div>
+            <div class="hero3__diploma_eff">
+              <img src="./src/assets/images/diploms/img5.png" alt="Громота" class="hero3__diploma-img">
+            </div>
+          </div>
+        </div>
+        <button class="hero2__btn-slider hero2__btn-slider_right hero3__btn-slider_right"><div class="icon"></div></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero4">
+  <div class="container hero__container">
+    <div class="hero4__content">
+      <h1 class="hero4__title-text">Проведем лечение в <span class="hero4__title-text_blue">4 этапа</span></h1>
+      <div class="hero4__block hero4__block1">
+
+        <div class="hero4__img_gradient">
+          <img src="./src/assets/images/hero4/img1.png" alt="photo_stage_1" class="hero4__img">
+        </div>
+
+        <div class="hero4__step-block">
+
+          <h1 class="hero4__title-text hero4__title-text_br">
+            <span class="hero4__title-text_step">Этап</span>
+            <span class="hero4__title-text_blue hero4__title-text_step-num">01</span>
+          </h1>
+
+          <div class="hero4__blur-block">
+            <h1 class="hero4__title-text hero4__title-text_br">
+              Бесплатно Проведем
+              <span class="hero4__title-text_blue">Детальное обследование</span>
+            </h1>
+
+            <p class="hero4__text">
+              <span>
+                <b>Осмотр у стоматолога</b> и <b>компьютерная томограма</b>
+                помогут составить план лечения под конкретный
+                клинический случай
+              </span>
+              <span>
+                По итогу обследования составим план лечения
+                <b>в 3 вариантах</b>
+              </span>
+            </p>
+
+            <button class="hero1__button doctor-btn-record"><p class="doctor-btn-record__text">Записаться на прием</p><img src="./src/assets/svg/arrow-right.svg" alt='arrow'></button>
+          
+          </div>
+        </div>
+
+        <div class="reference">
+          <div class="reference__header">
+            <img src="./src/assets/svg/reference-svg.svg" alt="reference" class="reference__header-img">
+            <h3 class="reference__header-title">Компьютерный томограф <span class="reference__header-title_white">Sirona</span></h3>
+          </div>
+          <div class="reference__body">
+            <img src="./src/assets/images/reference-img.png" alt="reference-img" class="reference__img">
+            <p class="reference__text">
+              <span>Покажет <b>3D-реконструкцию</b> зубочелюстной системы и состояние ваших зубов, дёсен, корней, челюсти. Смоделируем заранее, каким будет протез на имплантах.</span>
+              <span>Доза облучения по сравнению с рентгеном <b>в 4 раза меньше</b>, что позволяет делать снимки даже <b>детям от 3 лет.</b></span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="hero4__block hero4__block2">
+
+        <div class="hero4__img_gradient">
+          <img src="./src/assets/images/hero4/img2.png" alt="photo_stage_2" class="hero4__img">
+        </div>
+
+        <div class="hero4__step-block">
+
+          <h1 class="hero4__title-text hero4__title-text_br">
+            <span class="hero4__title-text_step">Этап</span>
+            <span class="hero4__title-text_blue hero4__title-text_step-num">02</span>
+          </h1>
+
+          <div class="hero4__blur-block">
+            <h1 class="hero4__title-text">
+              Лечение без боли
+            </h1>
+
+            <p class="hero4__text">
+              <span>
+                <b>*97% пациентов</b> не испытывают болевых ощущений, у остальных лишь небольшой дискомфорт
+              </span>
+            </p>
+            <div class="hero4__check-mark-div">
+              <img src="./src/assets/svg/check-mark_yellow.svg" alt="check-mark">
+              <p class="hero4__text">Установка импланта займёт в среднем час и пройдёт не сложнее удаления зуба</p>
+            </div>
+            <div class="hero4__check-mark-div">
+              <img src="./src/assets/svg/check-mark_yellow.svg" alt="check-mark">
+              <p class="hero4__text">Максимальный комфорт благодаря качественной анестезии и новейшемуоборудованию</p>
+            </div>
+            <div class="hero4__check-mark-div">
+              <img src="./src/assets/svg/check-mark_yellow.svg" alt="check-mark">
+              <p class="hero4__text">Седация для сложных случаев и излишне эмоциональных пациентов</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+
+      <div class="hero4__block hero4__block3">
+
+        <div class="hero4__img_gradient">
+          <img src="./src/assets/images/hero4/img3.png" alt="photo_stage_3" class="hero4__img">
+        </div>
+
+        <div class="hero4__step-block">
+
+          <h1 class="hero4__title-text hero4__title-text_br">
+            <span class="hero4__title-text_step">Этап</span>
+            <span class="hero4__title-text_blue hero4__title-text_step-num">03</span>
+          </h1>
+
+          <div class="hero4__blur-block">
+            <h1 class="hero4__title-text">
+              Имплантация с цифровым 3D - микроскопом <span class="hero4__title-text_yellow">Free Vision</span>
+            </h1>
+
+            <p class="hero4__text">
+              <span>
+                Увеличивает поверхность в 30 раз, ведёт видеофиксацию и помогает контролировать все этапы лечения. Позволит спасти от удаления даже безнадёжные в иных случаях зубы.
+              </span>
+            </p>
+          
+          </div>
+        </div>
+      </div>
+
+
+      <div class="hero4__block hero4__block4">
+
+        <div class="hero4__img_gradient">
+          <img src="./src/assets/images/hero4/img3.png" alt="photo_stage_4" class="hero4__img">
+        </div>
+
+        <div class="hero4__step-block">
+
+          <h1 class="hero4__title-text hero4__title-text_br">
+            <span class="hero4__title-text_step">Этап</span>
+            <span class="hero4__title-text_blue hero4__title-text_step-num">04</span>
+          </h1>
+
+          <div class="hero4__blur-block">
+            <h1 class="hero4__title-text hero4__title-text_br">
+              Изготовим протез в лаборатории в тот же день
+            </h1>
+
+            <p class="hero4__text">
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi perferendis esse laboriosam cupiditate, inventore tenetur atque dolore ut, et a quasi. Atque consequatur enim magni voluptas officiis cumque? Quidem, accusantium.
+              </span>
+            </p>
+          
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 
 

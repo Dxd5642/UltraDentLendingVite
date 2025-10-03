@@ -1,0 +1,26 @@
+@media (max-width: 1040px){
+    .hero3{     
+        &__block-text{
+            width: 382px;
+
+            &_padding-left{
+                padding-left: 16px;
+            }
+
+            &:nth-child(1){
+                order: 2;
+            }
+            &:nth-child(2){
+                order: 1;
+            }
+        }
+    }
+}
+
+@media (max-width: 481px){
+    .hero3{     
+        &__block-text{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+@media (max-width: 900px){
+    .hero3{
+        &__diploma{
+            &-mblock{
+                width: 640px;
+            }
+            &-block{
+                width: 640px;
+            }
+            &-img{
+                height: 300px;
+            }
+        }
+    }
+}
+
+@media (max-width: 788px){
+    .hero3{
+        &__diploma{
+            &-mblock{
+                width: 530px;
+            }
+            &-block{
+                width: 530px;
+            }
+            &-img{
+                height: 246px;
+            }
+        }
+    }
+}
+
+@media (max-width: 674px){
+    .hero3{
+        &__diploma{
+            &-mblock{
+                width: 370px;
+            }
+            &-block{
+                width: 370px;
+            }
+            &-img{
+                height: 171px;
+            }
+        }
+    }
+}
+
+@media (max-width: 465px){
+    .hero3{
+        &__diploma{
+            &-mblock{
+                width: 357px;
+            }
+            &-block{
+                width: 100%;
+            }
+            &-img{
+                height: 170px;
+            }
+        }
+    }
+}
+
+@media (max-width: 390px){
+    .hero3{
+        &__diploma{
+            &-mblock{
+                min-width: 100dvw;
+                padding-left: 4px;
+            }
+            &-block{
+                width: 100%;
+                gap: calc((100dvw - 339px)/3);//1.5dvw;
+            }
+            &-img{
+                height: 170px;
+            }
+        }
+    }
+}

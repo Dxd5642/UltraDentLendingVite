@@ -1,0 +1,21 @@
+@media (max-width: 1184px){
+    .doctor-btn-record{
+        margin: 0px;
+
+        &__text{
+            
+        }
+
+    }
+}
+
+@media (max-width: 750px){
+    .doctor-btn-record{
+        height: 40px;
+        border-radius: 8px;
+
+        &__text{
+            font-size: 14px;
+        }
+    }
+}

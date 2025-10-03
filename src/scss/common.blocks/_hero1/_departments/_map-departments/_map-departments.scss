@@ -207,12 +207,12 @@ $z-index: (
     justify-content: center;
     align-items: center;
     transform: rotate(90deg);
-    @include button-transition(border-color background-color);
+    transition: all 0s ease;
     
     .icon {
       background-position: center center;
       background-repeat: no-repeat;
-      transition: background-image 0.3s ease-in-out;
+      transition: background-image 0.0s ease-in-out;
       background-image: url("../../../../../assets/svg/btn-close/btn-close.svg");
     }
 

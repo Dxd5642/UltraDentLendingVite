@@ -1,0 +1,31 @@
+@use '../../../fonts';
+
+.hero4__title-text{
+    @include fonts.Work-sans(28px, normal, 700, 120%, 0%);
+    color: #2D2D2D;
+    text-transform: uppercase;
+
+     &_blue{
+        color: rgba(54, 122, 202, 1);
+        font-weight: 800;
+     }
+
+     &_yellow{
+      color: rgba(224, 167, 56, 1);
+     }
+
+     &_br{
+         display: flex;
+         flex-direction: column;
+     }
+
+     &_step{
+        text-transform: none;
+        letter-spacing: '-1.12px';
+     }
+
+     &_step-num{
+        font-size: 64px;
+        line-height: 80%;
+     }
+}

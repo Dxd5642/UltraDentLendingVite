@@ -1,0 +1,53 @@
+@media (max-width: 1600px){
+    .hero2__choice-doctor{
+        width: 720px;
+        height: 450px;
+    }
+
+    .doctor{
+        width: 720px;
+
+        &.active{
+            
+
+            .hero2__message{
+                width: 279px;
+            }
+
+            .message__text{
+                
+            }
+
+            .hero2_decorate{
+                
+            }
+        }
+
+        &-description{
+            width: 282px;
+            margin-left: 40px;
+            margin-bottom: 40px;
+            gap: 18px;
+        }
+    }
+
+    .choice-doctor-img{
+        width: 396px;
+    }
+
+    .hero2__doctor-block{
+        
+    }
+
+    @keyframes dsin{
+        0%{
+            transform: translateY(0px);
+        }
+        50%{
+            transform: translateY(5px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+    }
+}

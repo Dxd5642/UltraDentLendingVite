@@ -1,0 +1,74 @@
+@media (max-width: 1184px){
+    .hero2__work-experience{
+        
+    }
+
+    .hero2__doctor-fio{
+        
+
+        &_t{
+            
+        }
+    }
+
+    .doctor{
+        &-famaly{
+            font-size: 20px;
+        }
+
+        &-name{
+            font-size: 14px;
+        }
+
+        &-job-white{
+            
+        }
+
+        &-experience__num{
+            
+        }
+
+        &-experience__text{
+            
+        }
+    }
+}
+
+
+
+@media (max-width: 750px){
+    .hero2__work-experience{
+        
+    }
+
+    .hero2__doctor-fio{
+        
+
+        &_t{
+            
+        }
+    }
+
+    .doctor{
+        &-famaly{
+            font-size: 16px;
+        }
+
+        &-name{
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.80);
+        }
+
+        &-job-white{
+            font-size: 11px;
+        }
+
+        &-experience__num{
+            font-size: 16px;
+        }
+
+        &-experience__text{
+            font-size: 11px;
+        }
+    }
+}

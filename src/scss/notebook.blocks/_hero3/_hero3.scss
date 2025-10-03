@@ -1,0 +1,20 @@
+@media (max-width: 1380px){
+    .hero3{
+        &__block1{
+            max-width: 1162px;
+            min-width: 1008px;
+            margin: 0px auto 0px auto;
+            justify-content: center;
+        }
+
+        &__block2{
+            width: unset;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            margin: 32px 112px 0px 112px;
+            
+        }
+    }
+}

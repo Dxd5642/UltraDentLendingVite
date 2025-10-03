@@ -34,7 +34,6 @@
     &__text{
         @include work-sans(16px, normal, 400, 100%, -0.05em);
         color: rgba(68, 76, 84, 1);
-        width: 80%;
         opacity: 0;
         transition: opacity 0.3s ease-in-out 1.1s;
 

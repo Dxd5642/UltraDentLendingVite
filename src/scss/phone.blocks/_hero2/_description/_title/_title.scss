@@ -1,3 +1,15 @@
+@media (max-width: 750px) {
+    .hero2{
+        &__title{
+            font-size: clamp(20px, 5vw, 23px);
+
+            &_center{
+                padding: 0px 16px 0px 16px;
+            }
+        }
+    }
+}
+
 @media (max-width: 700px){
     .hero2{
         &__title-block{

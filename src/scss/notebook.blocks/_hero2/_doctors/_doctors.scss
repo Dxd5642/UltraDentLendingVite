@@ -1,0 +1,9 @@
+@media (max-width: 1600px){
+    .hero2{
+        &__doctors{
+            gap: 16px;
+            -webkit-tap-highlight-color: transparent;
+            outline: none;
+        }
+    }
+}

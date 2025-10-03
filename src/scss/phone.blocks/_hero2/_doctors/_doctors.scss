@@ -1,0 +1,26 @@
+@media (max-width: 1184px){
+    .hero2{
+        &__doctors{
+            gap: 16px;
+            -webkit-tap-highlight-color: transparent;
+            outline: none;
+            flex-direction: row;
+            align-self: center;
+            max-width: 100%;
+            min-width: 1080px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+
+@media (max-width: 750px){
+    .hero2{
+        &__doctors{
+            gap: 6px;
+            min-width: 600px;
+        }
+    }
+}
