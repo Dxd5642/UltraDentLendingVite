@@ -1,0 +1,17 @@
+@media (max-width: 1000px){
+    .hero4{
+        &__blur-block{
+            max-width: 329px !important;
+            padding: 12px;
+            border-radius: 8px;
+        }
+    }
+}
+
+@media (max-width: 390px){
+    .hero4{
+        &__blur-block{
+            max-width: calc(100% - 16px) !important;
+        }
+    }
+}

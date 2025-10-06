@@ -1,0 +1,82 @@
+@media (max-width: 1000px){
+    .hero4{ 
+        &__container{
+            box-sizing: border-box;
+            padding: 0px 16px;
+        }
+
+        &__content{
+            padding: 0px;
+            margin-top: 100px;
+        }
+
+        &__block{
+            width: 100%;
+            flex-direction: column;
+
+            .hero4__step-block{
+                right: unset;
+                left: calc(50% - 164.5px);
+                align-items: normal;
+                top: 13px;
+            }
+        }
+
+        &__block1{
+            margin-top: 16px;
+            padding: 0;
+            min-height: unset;
+            .hero4__img_gradient{ 
+                left: 0px;
+            }
+
+            .doctor-btn-record{
+                height: 40px;
+                border-radius: 8px;
+            }
+        }
+
+        &__block2{
+            min-height: 627px;
+            .hero4__img_gradient{
+                left: 0px;
+            }
+        }
+
+        &__block3{
+            min-height: 442px;
+            .hero4__img_gradient{
+                left: 0px;
+            }
+        }
+
+        &__block4{
+            min-height: 1063px;
+            .hero4__img_gradient{
+                left: 0px;
+            }
+            .hero4__blur-block{
+                max-height: 62px;
+            }
+            .hero4__step-block{
+                gap: 288px;
+            }
+        }
+    }
+}
+
+@media (max-width: 390px){
+    .hero4{
+        &__block{
+            .hero4__step-block{
+                left: 16px;
+            }
+        }
+
+        &__block4{
+            .hero4__blur-block{
+                max-height: 80px;
+            }
+        }
+    }
+}

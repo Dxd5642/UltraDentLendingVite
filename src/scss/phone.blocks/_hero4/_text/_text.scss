@@ -1,0 +1,12 @@
+@media (max-width: 1000px){
+    .hero4{
+        &__text{
+            font-size: 13px;
+        }
+
+        &__check-mark-div{
+            display: flex;
+            gap: 16px;
+        }
+    }
+}

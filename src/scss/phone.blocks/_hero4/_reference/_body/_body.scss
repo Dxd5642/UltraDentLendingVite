@@ -1,0 +1,17 @@
+@media (max-width: 670px){
+    .reference{
+        &__body{
+            // display: flex;
+            gap: 8px;
+            padding: 16px;
+            display: grid;
+            grid-template-areas: 
+                "image text1"
+                "text2 text2";
+        }
+        &__text2{
+            grid-area: text2;
+            grid-column: span 2;
+        }
+    }
+}

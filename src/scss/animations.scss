@@ -1,0 +1,159 @@
+//cubic-bezier(0.165, 0.84, 0.44, 1)
+
+@mixin departure_on_right($time: 0.5s, $delay: 0s, $type_anim: ease-in-out){
+    animation-name: departure_on_right;
+    animation-duration: $time;
+    animation-delay: $delay;
+    animation-timing-function: $type_anim;
+    animation-fill-mode: both;
+
+    @keyframes departure_on_right{
+        from{
+            transform: translateX(100dvw);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}
+
+@mixin departure_on_bottom($time: 0.5s, $delay: 0s, $type_anim: ease-in-out){
+    animation-name: departure_on_bottom;
+    animation-duration: $time;
+    animation-delay: $delay;
+    animation-timing-function: $type_anim;
+    animation-fill-mode: both;
+
+    @keyframes departure_on_bottom{
+        from{
+            transform: translateY(100dvh);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+
+@mixin smoothWobble(){
+    animation-name: smoothWobble;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+    @keyframes smoothWobble {
+        0%{
+            transform: rotate(0deg) translateY(0px);
+        }
+
+        12.5%{
+            transform: rotate(-10deg) translateY(15px);
+        }
+
+        25%{
+            transform: rotate(0deg) translateY(0px);
+        }
+
+        37.5%{
+            transform: rotate(-10deg) translateY(15px);
+        }
+
+        50%{
+            transform: rotate(0deg) translateY(0px);
+        }
+
+        100%{
+            transform: rotate(0deg) translateY(0px);
+        }
+    }
+}
+
+@mixin smoothWobbleInvert(){
+    animation-name: smoothWobbleInvert;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+    @keyframes smoothWobbleInvert {
+        0%{
+            transform: rotate(0deg);
+        }
+
+        12.5%{
+            transform: rotate(20deg);
+        }
+
+        25%{
+            transform: rotate(0deg);
+        }
+
+        37.5%{
+            transform: rotate(20deg);
+        }
+
+        50%{
+            transform: rotate(0deg);
+        }
+
+        100%{
+            transform: rotate(0deg);
+        }
+    }
+}
+
+@mixin smoothPulseForText(){
+    animation-name: smoothPulseForText;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+    @keyframes smoothPulseForText{
+        0%, 100%{
+            text-shadow: 0px 4px 16px rgba(255, 255, 255, 0.3);
+        }
+        50%{
+            text-shadow: 0px 4px 16px rgba(255, 255, 255, 0.8);
+        }
+    }
+}
+
+@mixin pulseAndMovement(){
+    animation-name: pulseAndMovement;
+    animation-duration: 14s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+    @keyframes pulseAndMovement{
+        0% {
+            transform: translate(0, 0) scale(1);
+        }
+        12.5% {
+            transform: translate(15dvw, 15dvh) scale(0.6);
+        }
+        25% {
+            transform: translate(0, 0) scale(1);
+        }
+        37.5% {
+            transform: translate(-15dvw, 15dvh) scale(0.6);
+        }
+        50% {
+            transform: translate(0, 0) scale(1);
+        }
+        62.5% {
+            transform: translate(15dvw, -15dvh) scale(0.6);
+        }
+        75% {
+            transform: translate(0, 0) scale(1);
+        }
+        87.5% {
+            transform: translate(-15dvw, -15dvh) scale(0.6);
+        }
+        100% {
+            transform: translate(0, 0) scale(1);
+        }
+    }
+}

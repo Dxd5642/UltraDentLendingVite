@@ -1,3 +1,5 @@
+@use '../../../../animations.scss';
+
 .doctor-card{
     width: auto;
     height: auto;
@@ -7,5 +9,11 @@
         position: absolute;
         right: 180px;
         z-index: 10;
+        transform: translateY(100dvh);
+        
+
+        &.loaded{
+            @include animations.departure_on_bottom($delay: 0.5s, $type_anim: cubic-bezier(0.165, 0.84, 0.44, 1));
+        }
     }
 }

@@ -6,6 +6,7 @@
     border-radius: 16px;
     display: flex;
     position: relative;
+        transition: all 0.5s ease-in-out;
 }
 
 .doctor{
@@ -14,7 +15,7 @@
     position: relative;
     opacity: 0;
     scale: 0.8;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     &.active{
         opacity: 1;
@@ -56,6 +57,7 @@
 
 .hero2__doctor-block{
     display: flex;
+    transition: all 0.5s ease-in-out;
 }
 
 @keyframes dsin{

@@ -1,7 +1,7 @@
 @use '../../../fonts';
 
 .hero4__title-text{
-    @include fonts.Work-sans(28px, normal, 700, 120%, 0%);
+    @include fonts.Work-sans(28px, normal, 700, 120%, 0em);
     color: #2D2D2D;
     text-transform: uppercase;
 
@@ -11,7 +11,7 @@
      }
 
      &_yellow{
-      color: rgba(224, 167, 56, 1);
+      color: rgba(255, 175, 36, 1);
      }
 
      &_br{

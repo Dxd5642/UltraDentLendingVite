@@ -1,3 +1,5 @@
+@use '../../../animations.scss';
+
 .hero1{
     &__tooth-image{
         position: absolute;
@@ -15,31 +17,7 @@
 }
 
 .animate-tooth{
-    animation: smoothWobble 12s ease-in-out infinite;
+    @include animations.smoothWobble();
 }
 
-@keyframes smoothWobble {
-    0%{
-        transform: rotate(0deg) translateY(0px);
-    }
 
-    12.5%{
-        transform: rotate(-10deg) translateY(15px);
-    }
-
-    25%{
-        transform: rotate(0deg) translateY(0px);
-    }
-
-    37.5%{
-        transform: rotate(-10deg) translateY(15px);
-    }
-
-    50%{
-        transform: rotate(0deg) translateY(0px);
-    }
-
-    100%{
-        transform: rotate(0deg) translateY(0px);
-    }
-}

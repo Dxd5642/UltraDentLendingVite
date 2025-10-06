@@ -1,7 +1,19 @@
 .reference{
     &__body{
-        display: flex;
         gap: 16px;
         padding: 16px;
-    }
+
+        display: grid;
+            grid-template-columns: 120px 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas: 
+                "image text1"
+                "image text2";
+        }
+        &__text1{
+            grid-area: text1;
+        }
+        &__text2{
+            grid-area: text2;
+        }
 }

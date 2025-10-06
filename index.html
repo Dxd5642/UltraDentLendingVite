@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script type="module" src="https://unpkg.com/@google/model-viewer@^3.4.0/dist/model-viewer.min.js"></script>
 
 <style>
 .preloader {
@@ -144,7 +143,7 @@ body.loaded #content {
   <div class="container">
       <header class="header">
         <div class="header__div1">
-          <img src="./src/assets/images/header_logo.png" alt="header_logo" class="header__div1__img">
+          <a href="#"><img src="./src/assets/images/header_logo.png" alt="header_logo" class="header__div1__img"></a>
         </div>
         <div class="header__div2">
           <button class="header__div2__btn">О клинике</button>
@@ -563,9 +562,9 @@ body.loaded #content {
 </section>
 
 <section class="hero4">
-  <div class="container hero__container">
+  <div class="container hero__container hero4__container">
     <div class="hero4__content">
-      <h1 class="hero4__title-text">Проведем лечение в <span class="hero4__title-text_blue">4 этапа</span></h1>
+      <h1 class="hero4__title-text hero4__title-text_center">Проведем лечение в <span class="hero4__title-text_blue">4 этапа</span></h1>
       <div class="hero4__block hero4__block1">
 
         <div class="hero4__img_gradient">
@@ -580,7 +579,7 @@ body.loaded #content {
           </h1>
 
           <div class="hero4__blur-block">
-            <h1 class="hero4__title-text hero4__title-text_br">
+            <h1 class="hero4__title-text hero4__title-text_br hero4__title-text_lower">
               Бесплатно Проведем
               <span class="hero4__title-text_blue">Детальное обследование</span>
             </h1>
@@ -601,21 +600,23 @@ body.loaded #content {
           
           </div>
         </div>
-
+        
         <div class="reference">
           <div class="reference__header">
             <img src="./src/assets/svg/reference-svg.svg" alt="reference" class="reference__header-img">
-            <h3 class="reference__header-title">Компьютерный томограф <span class="reference__header-title_white">Sirona</span></h3>
+            <h3 class="reference__header-title hero4__title-text_lower">Компьютерный томограф <span class="reference__header-title_white">Sirona</span></h3>
           </div>
+          
           <div class="reference__body">
             <img src="./src/assets/images/reference-img.png" alt="reference-img" class="reference__img">
-            <p class="reference__text">
-              <span>Покажет <b>3D-реконструкцию</b> зубочелюстной системы и состояние ваших зубов, дёсен, корней, челюсти. Смоделируем заранее, каким будет протез на имплантах.</span>
-              <span>Доза облучения по сравнению с рентгеном <b>в 4 раза меньше</b>, что позволяет делать снимки даже <b>детям от 3 лет.</b></span>
+            <p class="reference__text reference__text1">
+              <span class="">Покажет <b>3D-реконструкцию</b> зубочелюстной системы и состояние ваших зубов, дёсен, корней, челюсти. Смоделируем заранее, каким будет протез на имплантах.</span>
+            </p>
+            <p class="reference__text reference__text2">
+              <span class="">Доза облучения по сравнению с рентгеном <b>в 4 раза меньше</b>, что позволяет делать снимки даже <b>детям от 3 лет.</b></span>
             </p>
           </div>
         </div>
-
       </div>
 
 
@@ -633,7 +634,7 @@ body.loaded #content {
           </h1>
 
           <div class="hero4__blur-block">
-            <h1 class="hero4__title-text">
+            <h1 class="hero4__title-text hero4__title-text_lower">
               Лечение без боли
             </h1>
 
@@ -674,7 +675,7 @@ body.loaded #content {
           </h1>
 
           <div class="hero4__blur-block">
-            <h1 class="hero4__title-text">
+            <h1 class="hero4__title-text hero4__title-text_lower">
               Имплантация с цифровым 3D - микроскопом <span class="hero4__title-text_yellow">Free Vision</span>
             </h1>
 
@@ -692,7 +693,7 @@ body.loaded #content {
       <div class="hero4__block hero4__block4">
 
         <div class="hero4__img_gradient">
-          <img src="./src/assets/images/hero4/img3.png" alt="photo_stage_4" class="hero4__img">
+          <img src="./src/assets/images/hero4/img4.png" alt="photo_stage_4" class="hero4__img">
         </div>
 
         <div class="hero4__step-block">
@@ -703,15 +704,42 @@ body.loaded #content {
           </h1>
 
           <div class="hero4__blur-block">
-            <h1 class="hero4__title-text hero4__title-text_br">
+            <h1 class="hero4__title-text hero4__title-text_br hero4__title-text_lower">
               Изготовим протез в лаборатории в тот же день
             </h1>
 
-            <p class="hero4__text">
-              <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi perferendis esse laboriosam cupiditate, inventore tenetur atque dolore ut, et a quasi. Atque consequatur enim magni voluptas officiis cumque? Quidem, accusantium.
-              </span>
-            </p>
+            <div class="hero4__paragraph-blocks">
+              <div class="hero4__paragraph-block">
+                <div class="hero4__paragraph-header">
+                <h3 class="hero4__title-text hero4__title-text_br hero4__paragraph-title">
+                  <span>3D-принтер</span>
+                  <span>Form2 от FormLabs</span>
+                </h3>
+                <img src="./src/assets/images/formlabs.png" alt="img" class="hero4__paragraph-img">
+                </div>
+                <div class="hero4__paragraph-body">
+                  <p class="hero4__text">
+                    <span>Создаст зубные конструкции <b>любой сложности</b> из циркония или металлокерамики: коронки, протезы, мосты.</span>
+                    <span>Мы уверены в их качестве и даём <b>гарантию на протезы до 5 лет.</b></span>
+                  </p>
+                </div>
+              </div>
+              <div class="hero4__paragraph-block">
+                <div class="hero4__paragraph-header">
+                <h3 class="hero4__title-text hero4__title-text_br hero4__paragraph-title">
+                  <span>Цифровой сканер</span>
+                  <span>Primescan Sirona</span>
+                </h3>
+                <img src="./src/assets/images/primescan.png" alt="img" class="hero4__paragraph-img">
+                </div>
+                <div class="hero4__paragraph-body">
+                  <p class="hero4__text">
+                    <span><b>В точности</b> отсканирует ротовую полость и за пару минут создаст цифровой слепок.</span>
+                    <span>Поможет <b>без лишних примерок</b> изготовить зубы, которые выглядят и ощущаются как свои.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
           
           </div>
         </div>

@@ -1,0 +1,32 @@
+@media (max-width: 1000px){
+    .hero4{
+        &__img{
+            width: 100%;
+            height: auto;
+            min-width: 100%;
+            min-height: 100%;
+            &_gradient{
+                width: 100%;
+                max-height: 340px;
+                text-align: center;
+                overflow: hidden;
+                position: relative;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .hero4{
+        &__img{
+            min-width: 530px;
+            min-height: 340px;
+            &_gradient{
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+            }
+        }
+    }
+}

@@ -48,6 +48,7 @@
 @use './common.blocks/_hero4/_reference/_body/_text/text' as *;
 @use './common.blocks/_hero4/_reference/_header/header' as *;
 @use './common.blocks/_hero4/_reference/_body/_img/img' as *;
+@use './common.blocks/_hero4/_paragraph/paragraph' as *;
 
 
 //  Notebook adaptation
@@ -84,6 +85,9 @@
 @use './notebook.blocks/_hero3/_diploma/diploma' as *;
 @use './notebook.blocks/_hero3/_btn-slider/btn-slider' as *;
 @use './notebook.blocks/_hero3/_block-text/_text/text' as *;
+
+@use './notebook.blocks/_hero4/hero4' as *;
+@use './notebook.blocks/_hero4/_img/img' as *;
 
 
 
@@ -124,3 +128,15 @@
 @use './phone.blocks/_hero3/_diploma/diploma' as *;
 @use './phone.blocks/_hero3/_btn-slider/btn-slider' as *;
 
+@use './phone.blocks/_hero4/hero4' as *;
+@use './phone.blocks/_hero4/_img/img' as *;
+@use './phone.blocks/_hero4/_title-text/title-text' as *;
+@use './phone.blocks/_hero4/_text/text' as *;
+@use './phone.blocks/_hero4/_blur-block/blur-block' as *;
+@use './phone.blocks/_hero4/_step-block/step-block' as *;
+
+@use './phone.blocks/_hero4/_reference/reference' as *;
+@use './phone.blocks/_hero4/_reference/_body/body' as *;
+@use './phone.blocks/_hero4/_reference/_body/_text/text' as *;
+
+@use './phone.blocks/_hero4/_paragraph/paragraph' as *;

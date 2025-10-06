@@ -1,8 +1,7 @@
 @use '../../../fonts';
-
+@use '../../../animations.scss';
 .doctor-card{
     padding-right: 32px;
-    
 
     &__content{
         z-index: 15;
@@ -16,6 +15,10 @@
         gap: 30px;
         display: flex;
         flex-direction: column;
+
+        &.loaded{
+            @include animations.departure_on_right($delay: 0.5s, $type_anim: cubic-bezier(0.165, 0.84, 0.44, 1));
+        }
     }
 
     &__statement{
