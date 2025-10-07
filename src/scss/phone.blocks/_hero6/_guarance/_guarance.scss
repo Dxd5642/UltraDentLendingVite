@@ -1,0 +1,13 @@
+@media (max-width: 970px){
+    .hero6{
+        &__guarantee{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            margin-top: 16px;
+        }
+    }
+}

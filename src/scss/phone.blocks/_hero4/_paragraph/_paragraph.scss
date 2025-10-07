@@ -29,9 +29,17 @@
 
 @media (max-width: 390px){
      .hero4{
+        &__paragraph-blocks{
+            gap: 30px;
+        }
+
         &__paragraph-title{
             font-size: 12px;
             line-height: 22px;
+        }
+
+        &__paragraph-block{
+            height: auto;
         }
     }
 }

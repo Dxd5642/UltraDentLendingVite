@@ -1,0 +1,36 @@
+@media (max-width: 970px){
+    .hero6{
+        &__name-block{
+            width: 342px;
+            position: absolute;
+            bottom: 0px;
+            left: calc(50% - 172px);
+            transform: translateY(206px);
+        }
+
+        &__title-doctor{
+            padding-bottom: 32px;
+        }
+    }
+}
+
+@media (max-width: 750px){
+    .hero6{
+        &__doctor-famaly{
+            font-size: 20px;
+        }
+
+        &__doctor-name{
+            color: rgb(45, 45, 45);
+        }
+    }
+}
+
+@media (max-width: 386px){
+    .hero6{
+        &__name-block{
+            width: 100%;
+            left: unset;
+        }
+    }
+}

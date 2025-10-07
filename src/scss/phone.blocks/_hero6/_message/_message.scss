@@ -1,0 +1,62 @@
+@media (max-width: 970px){
+    .hero6{ 
+        &__message{
+            position: absolute;
+            bottom: 0px;
+            right: calc(50% - 267px);
+        }
+
+        &__message-decorate{
+            transform: rotate(-90deg) translate(0px, -43px) !important;
+        }
+
+        &__doctor-card__benefit{
+            font-size: 13px;
+        }
+    }
+}
+
+@media (max-width: 570px){
+    .hero6{
+        &__message{
+            position: absolute;
+            bottom: 0px;
+            right: -16px;
+        }
+    }
+}
+
+@media (max-width: 483px){
+    .hero6{
+        &__message{
+            width: 279px;
+            padding: 30px 10px 50px;
+            gap: 30px;
+
+            .doctor-card__slogan{
+                font-size: 20px;
+            }
+        }
+
+        &__message-decorate{
+            transform: rotate(-90deg) translate(0px, -40px) !important;
+            border-left: 17.5px solid transparent;
+            border-right: 17.5px solid transparent;
+            border-bottom: 35px solid rgba(243, 243, 243, 1);
+        }
+    }    
+}
+
+@media (max-width: 404px){
+    .hero6{
+        &__message{
+            width: 221px;
+            padding: 30px 10px 30px;
+            gap: 10px;
+
+            .doctor-card__slogan{
+                font-size: 18px;
+            }
+        }
+    }  
+}

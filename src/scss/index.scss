@@ -1,5 +1,4 @@
 // Default
-@use './fonts';
 @use './common.blocks/_container/container' as *;
 @use './common.blocks/_head/head' as *;
 @use './common.blocks/_hero1/_departments/departments' as *;
@@ -50,6 +49,12 @@
 @use './common.blocks/_hero4/_reference/_body/_img/img' as *;
 @use './common.blocks/_hero4/_paragraph/paragraph' as *;
 
+@use './common.blocks/_hero6/hero6' as *;
+@use './common.blocks/_hero6/_guarance/guarance' as *;
+@use './common.blocks/_hero6/_message/message' as *;
+@use './common.blocks/_hero6/_img/img' as *;
+@use './common.blocks/_hero6/_name-block/name-block' as *;
+
 
 //  Notebook adaptation
 @use './notebook.blocks/_container/container' as *;
@@ -89,6 +94,10 @@
 @use './notebook.blocks/_hero4/hero4' as *;
 @use './notebook.blocks/_hero4/_img/img' as *;
 
+@use './notebook.blocks/_hero6/hero6' as *;
+@use './notebook.blocks/_hero6/_name-block/name-block' as *;
+@use './notebook.blocks/_hero6/_img/img' as *;
+@use './notebook.blocks/_hero6/_message/message' as *;
 
 
 // Phone adaptation
@@ -140,3 +149,9 @@
 @use './phone.blocks/_hero4/_reference/_body/_text/text' as *;
 
 @use './phone.blocks/_hero4/_paragraph/paragraph' as *;
+
+@use './phone.blocks/_hero6/hero6' as *;
+@use './phone.blocks/_hero6/_guarance/guarance' as *;
+@use './phone.blocks/_hero6/_img/img' as *;
+@use './phone.blocks/_hero6/_message/message' as *;
+@use './phone.blocks/_hero6/_name-block/name-block' as *;

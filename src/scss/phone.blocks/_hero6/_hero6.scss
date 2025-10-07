@@ -1,0 +1,23 @@
+@media (max-width: 970px){
+    .hero6{
+        &__content{
+            padding-top: 390px;
+            margin-bottom: 0px;
+            padding-bottom: 265px;
+            min-width: 100%;
+        }
+        
+        &__main-block{
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 470px){
+    .hero6{
+        &__main-block{
+            min-width: 100%;
+            justify-content: end;
+        }
+    }
+}

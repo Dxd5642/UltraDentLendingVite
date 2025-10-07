@@ -1,0 +1,37 @@
+@media (max-width: 970px){
+    .hero6{
+        &__img{
+            height: 347px;
+            transform: translateX(0);
+            position: relative;
+            right: calc(-50% + 252px);
+            margin: 0px;
+        }
+    }
+}
+
+@media (max-width: 490px){
+    .hero6{
+        &__img{
+            left: -46px;
+        }
+    }
+}
+
+@media (max-width: 470px){
+    .hero6{
+        &__img{
+            left: unset;
+            right: 202px;
+        }
+    }
+}
+
+@media (max-width: 404px){
+    .hero6{
+        &__img{
+            left: unset;
+            right: 150px;
+        }
+    }
+}

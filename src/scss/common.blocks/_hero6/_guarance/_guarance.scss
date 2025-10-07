@@ -1,0 +1,41 @@
+@use '../../../fonts';
+
+.hero6{
+    &__guarantee{
+        display: flex;
+        justify-content: space-between;
+        width: 702px;
+        position: absolute;
+        top: 0px;
+    }
+
+    &__guarantee-block{
+        width: 205px;
+        padding: 16px;
+        border-radius: 16px;
+        border: 2px solid #3A7DCB;
+    }
+
+    &__guarantee-block:nth-child(1){
+        transform: rotate(4deg);
+    }
+
+    &__guarantee-block:nth-child(2){
+        transform: rotate(-2deg);
+    }
+
+    &__guarantee-title{
+        font-size: 20px;
+        margin-bottom: 12px
+    }
+
+    &__guarantee-text{
+        @include fonts.Montserrat(14px, normal, 400, 100%, -0.07px);
+        color: #444C54;
+    }
+
+    &__guarantee-img{
+        width: 120px;
+        height: 120px;
+    }
+}

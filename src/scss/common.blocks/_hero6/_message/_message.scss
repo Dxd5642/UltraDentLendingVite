@@ -1,0 +1,12 @@
+.hero6{
+    &__message{
+        padding-bottom: 50px;
+        position: absolute;
+        bottom: 110px;
+        right: 0px;
+    }
+
+    &__message-decorate{
+        transform: rotate(-90deg) translate(0px, -43px) !important;
+    }
+}

@@ -1,0 +1,44 @@
+@media (max-width: 1600px){
+    .hero6{
+        &__doctor-fio{
+            font-size: 28px;
+        }
+
+        &__doctor-job{
+            font-size: 18px;
+        }
+
+        &__doctor-famaly{
+            font-size: 28px;
+        }
+
+        &__doctor-name{
+            font-size: 20px;
+        }
+
+        &__btn{
+            margin-top: 19.5px;
+        }
+    }
+}
+
+@media (max-width: 1184px){
+    .hero6{
+        &__name-block{
+            width: 300px;
+        }
+        &__btn{
+            margin-top: 19.5px !important;
+            height: 40px;
+            border-radius: 8px;
+        }
+    }
+}
+
+@media (max-width: 1094px){
+    .hero6{
+        &__doctor-fio{
+            font-size: 20px !important;
+        }
+    }
+}

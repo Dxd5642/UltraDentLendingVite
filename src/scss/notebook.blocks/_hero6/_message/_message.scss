@@ -1,0 +1,20 @@
+@media (max-width: 1450px){
+    .hero6{ 
+        &__message{
+            right: 100px;
+            bottom: 70px;
+        }
+
+        &__message-decorate{
+            transform: rotate(-90deg) translate(0px, -43px) !important;
+        }
+    }
+}
+
+@media (max-width: 1184px){
+    .hero6{ 
+        &__message{
+            right: 43px;
+        }
+    }
+}
