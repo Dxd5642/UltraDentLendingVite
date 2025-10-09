@@ -72,7 +72,7 @@
     }
 }
 
-@mixin smoothWobbleInvert(){
+@mixin smoothWobbleInvert($default_transform: 0){
     animation-name: smoothWobbleInvert;
     animation-duration: 12s;
     animation-timing-function: ease-in-out;
@@ -80,27 +80,27 @@
 
     @keyframes smoothWobbleInvert {
         0%{
-            transform: rotate(0deg);
+            transform: rotate(-4deg) translate($default_transform);
         }
 
         12.5%{
-            transform: rotate(20deg);
+            transform: rotate(5deg) translate($default_transform);
         }
 
         25%{
-            transform: rotate(0deg);
+            transform: rotate(-4deg) translate($default_transform);
         }
 
         37.5%{
-            transform: rotate(20deg);
+            transform: rotate(5deg) translate($default_transform);
         }
 
         50%{
-            transform: rotate(0deg);
+            transform: rotate(-4deg) translate($default_transform);
         }
 
         100%{
-            transform: rotate(0deg);
+            transform: rotate(-4deg) translate($default_transform);
         }
     }
 }
@@ -132,28 +132,29 @@
             transform: translate(0, 0) scale(1);
         }
         12.5% {
-            transform: translate(15dvw, 15dvh) scale(0.6);
+            transform: translate(2dvw, 2dvh) scale(0.8);
         }
         25% {
-            transform: translate(0, 0) scale(1);
+            transform: translate(0, 0) scale(0.6);
         }
         37.5% {
-            transform: translate(-15dvw, 15dvh) scale(0.6);
+            transform: translate(-2dvw, 2dvh) scale(0.8);
         }
         50% {
             transform: translate(0, 0) scale(1);
         }
         62.5% {
-            transform: translate(15dvw, -15dvh) scale(0.6);
+            transform: translate(2dvw, -2dvh) scale(0.8);
         }
         75% {
-            transform: translate(0, 0) scale(1);
+            transform: translate(0, 0) scale(0.6);
         }
         87.5% {
-            transform: translate(-15dvw, -15dvh) scale(0.6);
+            transform: translate(-2dvw, -2dvh) scale(0.8);
         }
         100% {
             transform: translate(0, 0) scale(1);
         }
     }
 }
+

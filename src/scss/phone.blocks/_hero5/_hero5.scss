@@ -1,0 +1,12 @@
+@media (max-width: 700px){
+    .hero5{
+        &__block1{
+            width: calc(100dvw - 32px);
+        }
+        &__block2{
+            width: calc(100dvw - 32px);
+            gap: 20px;
+            justify-content: center;
+        }
+    }
+}

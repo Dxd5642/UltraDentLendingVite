@@ -1,0 +1,70 @@
+@use '../../../fonts';
+
+.hero5{
+    &__main-title{
+        @include fonts.Work-sans(28px, normal, 700, 120%, 0em);
+        color: rgba(255, 255, 255, 0.8);
+        text-transform: uppercase;
+        text-align: center;
+
+        &_lower{
+            text-transform: unset;
+            font-size: 24px;
+            font-weight: 500;
+            letter-spacing: -0.04em;
+            margin-top: 16px;
+        }
+    }
+
+    &__woman-text{
+        @include fonts.Work-sans(16px, normal, 700, 120%, -0.04em);
+        text-align: center;
+        color: rgba(68, 67, 80, 1);
+    }
+
+    &__reference-text{
+        @include fonts.Work-sans(14px, normal, 600, 120%, -0.04em);
+        color: rgba(45, 45, 45, 1);
+    }
+
+    &__discount-text1{
+        @include fonts.Work-sans(14px, normal, 600, 120%, -0.56px);
+        color: rgba(45, 45, 45, 1);
+        text-transform: uppercase;
+    }
+
+    &__discount-text2{
+        font-size: 56px;
+        font-weight: 650;
+        letter-spacing: -2.24px;
+    }
+
+    &__discount-text3{
+        font-size: 14px;
+        letter-spacing: -0.56px;
+        text-transform: unset;
+    }
+
+    &__btn-text{
+        @include fonts.Work-sans(18px, normal, 600, 100%, -0.5px);
+        color: #FFF;
+    }
+
+    &__question-text{
+        @include fonts.Work-sans(24px, normal, 700, 120%, -0.96px);
+        color: rgba(68, 67, 80, 1);
+    }
+
+    &__variant-text{
+        @include fonts.Work-sans(15px, normal, 400, 100%, 0em);
+        color: rgba(116, 116, 116, 1);
+        width: 100%;
+        border-radius: 16px;
+        background-color: rgba(255, 255, 255, 0.8);
+        position: relative;
+        bottom: 0px;
+        padding: 6px;
+        text-align: center;
+        margin-top: auto;
+    }
+}

@@ -1,0 +1,8 @@
+@media (max-width: 390px){
+    .hero7{
+        &__block{
+            width: calc(100dvw - 32px);
+            gap: 16px;
+        }
+    }
+}

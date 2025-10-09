@@ -10,7 +10,7 @@ import './js/hero2';
 
 import './js/hero3';
 
-
+import './js/hero5';
 
 
 

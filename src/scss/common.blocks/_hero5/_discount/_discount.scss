@@ -1,0 +1,33 @@
+.hero5{
+    &__discount{
+        width: 162px;
+        height: 162px;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+        border: 1px solid #FFF;
+        background-color: rgba(242, 242, 242, 0.80);
+        backdrop-filter: blur(11px);
+        -webkit-backdrop-filter: blur(11px);
+        position: absolute;
+        right: 16px;
+        bottom: 40px;
+    }
+
+    &__stick{
+        width: 25px;
+        height: 6px;
+        border-radius: 10px;
+        background-color: rgba(255, 175, 36, 1);
+        justify-self: center;
+        align-self: center;
+    }
+
+    &__discount-block{
+        display: flex;
+        gap: 6px;
+    }
+}

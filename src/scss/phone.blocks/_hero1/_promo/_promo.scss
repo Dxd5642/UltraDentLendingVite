@@ -1,3 +1,4 @@
+@use '../../../animations.scss';
 @media (max-width: 1068px){
     .hero1{
         &__promo{
@@ -45,7 +46,8 @@
             height: 86px;
             padding: 5px;
             border-radius: 8px;
-            transform: rotate(-4deg) translate(-82px, -14px);
+            transform-origin: 25% center;
+            @include animations.smoothWobbleInvert((-82px, -18px))
         }
 
         &__logo{
@@ -67,7 +69,8 @@
 @media(max-width: 370px){
     .promo{
         &__details{
-            transform: rotate(-4deg) translate(-52px, -10px);
+            transform-origin: 40% center;
+            @include animations.smoothWobbleInvert((-52px, -20px))
         }
 
         &__includes{

@@ -1,0 +1,113 @@
+@use '../../../../fonts';
+
+.hero5__request{
+    &-title{
+        @include fonts.Work-sans(20px, normal, 700, 120%, 0em);
+        color: rgba(45, 45, 45, 1);
+    }
+
+    &-forms{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &-form{
+        position: relative;
+
+        & .hero7__warning{
+            display: none;
+            position: absolute;
+            bottom: calc(5% + 12px);
+            left: -33px;
+        }
+
+        &.unapprecial{
+            & .hero7__warning{
+                display: block
+            }
+        }
+    }
+
+    &-text{
+        @include fonts.Work-sans(15px, normal, 400, 26px, 0em);
+        color: rgba(68, 67, 80, 1);
+        align-self: center;
+
+        &_line-height{
+            line-height: 100%;
+            color: rgba(68, 67, 80, 1);
+        }
+    }
+
+    &-btn{
+        box-shadow: unset;
+    }
+
+    &-input{
+        width: 100%;
+        padding: 18px 16px;
+        border-radius: 16px;
+        background-color: rgba(255, 187, 69, 0.15);
+        border: 0px;
+        outline:none;
+        @include fonts.Work-sans(18px, normal, 400, 100%, -0.05em);
+        color: rgba(45, 45, 45, 1);
+
+        &:active{
+            border: 0px;
+        }
+
+        &::placeholder{
+            @include fonts.Work-sans(18px, normal, 400, 100%, -0.05em);
+            color: rgba(45, 45, 45, 0.4);
+        }
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+
+    &-agreement{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    &-agree-btn{
+        border-radius: 50%;
+        min-width: 24px;
+        min-height: 24px;
+        border: 1px solid rgba(255, 187, 69, 1);
+        background-color: rgba(255, 187, 69, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & .icon{
+            opacity: 0;
+            transition: all 0.2s ease-in-out;
+        }
+
+        &:hover{
+            background-color: rgba(255, 187, 69, 0.35);
+        }
+
+        &.active{
+            border: 0px;
+
+            & .icon{
+                opacity: 1;
+                width: 50%;
+                height: 50%;
+            }
+        }
+
+        &.unapprecial{
+            border: red;
+        }
+    }
+}

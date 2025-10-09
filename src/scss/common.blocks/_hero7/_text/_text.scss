@@ -1,0 +1,28 @@
+@use '../../../fonts';
+
+.hero7{
+    &__main-title{
+        text-align: center;
+        & br{
+            display: none;
+        }
+    }
+
+    &__title-block{
+        display: flex;
+        gap: 16px
+    }
+
+    &__title-text{
+        @include fonts.Work-sans(22px, normal, 700, 120%, 0em);
+        color: #FFF;
+
+        & br{display: none}
+    }
+
+    &__text{
+        @include fonts.Work-sans(14px, normal, 500, 120%, 0em);
+        color: #FFF;
+        padding-left: 41px;
+    }
+}

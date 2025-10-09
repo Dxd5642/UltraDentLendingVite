@@ -1,0 +1,41 @@
+.hero7{
+    &__content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    &__blocks{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    &__block{
+        width: 378px;
+        height: 443px;
+        padding: 37px 35px;
+        border-radius: 16px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        gap: 23px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+        &:nth-of-type(1){
+            background-image: url('../../../assets/images/hero7/img1.png');
+        }
+
+        &:nth-of-type(2){
+            background-image: url('../../../assets/images/hero7/img2.png');
+        }
+
+        &:nth-of-type(3){
+            background-image: url('../../../assets/images/hero7/img3.png');
+        }
+    }
+}

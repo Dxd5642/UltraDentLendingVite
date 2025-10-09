@@ -1,0 +1,19 @@
+@media (max-width: 450px){
+    .hero5{
+        &__main-title{
+            text-align: start;
+        }
+
+        &__question-text{
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 367px){
+    .hero5{
+        &__discount-text2{
+            font-size: 42px;
+        }
+    }
+}

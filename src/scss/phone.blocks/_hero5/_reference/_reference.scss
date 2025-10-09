@@ -1,0 +1,17 @@
+@media (max-width: 493px){
+    .hero5{
+        &__woman-reference{
+            right: unset;//
+
+            &:nth-of-type(2){
+                bottom: 188px;
+                left: -11px;//
+            }
+
+            &:nth-of-type(3){
+                bottom: 136px;
+                left: 6px;//
+            }
+        }
+    }
+}

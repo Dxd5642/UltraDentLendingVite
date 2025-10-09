@@ -1,0 +1,17 @@
+@media (max-width: 493px){
+    .hero5{
+        &__discount{
+            right: -11px;//
+        }
+    }
+}
+
+@media (max-width: 367px){
+    .hero5{
+        &__discount{
+            width: 143px;
+            height: 143px;
+            padding: 10px;
+        }
+    }
+}

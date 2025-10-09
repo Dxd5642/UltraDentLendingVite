@@ -3,28 +3,20 @@ import toggleNavbar from "./header";
 const btn_departments = document.querySelector(".frag1__main-div__departments");
 const btn_departments_gen = document.querySelector('.depart-gen')
 const map_departments__btn_close = document.querySelector(".map-departments__btn-close")
-const backblur = document.querySelector(".backblur");
+const backblur = document.querySelector(".backblur2");
 const map_departments = document.querySelector(".map-departments");
 
 const map_departments__map = document.querySelector(".map-departments__map")
 const map_departments__title = document.querySelector(".map-departments__title")
 const map_departments__time = document.querySelector(".map-departments__time")
 const map_departments__btn = document.querySelectorAll(".map-departments__btn")
+const body = document.querySelector("body");
 
 
 document.addEventListener('DOMContentLoaded', function() {
     btn_departments.addEventListener('click', open_map_departments);
-});
-
-document.addEventListener('DOMContentLoaded', function() {
     btn_departments_gen.addEventListener('click', open_map_departments);
-});
-
-document.addEventListener('DOMContentLoaded', function() {
     btn_departments_gen.addEventListener('click', toggleNavbar);
-});
-
-document.addEventListener('DOMContentLoaded', function() {
     map_departments__btn_close.addEventListener('click', open_map_departments);
 });
 
@@ -50,16 +42,9 @@ const map_departments__btn_record_txt = document.querySelector(".map-departments
 
 document.addEventListener('DOMContentLoaded', function() {
     map_departments__btn1.addEventListener('click', () => choise_department(1));
-});
-
-document.addEventListener('DOMContentLoaded', function() {
     map_departments__btn2.addEventListener('click', () => choise_department(2));
-});
-
-document.addEventListener('DOMContentLoaded', function() {
     map_departments__btn3.addEventListener('click', () => choise_department(3));
 });
-
 
 function choise_department(num){
     let txt = ''

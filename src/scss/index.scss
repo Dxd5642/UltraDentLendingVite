@@ -34,6 +34,8 @@
 @use './common.blocks/_hero3/_block-text/_text/text' as *;
 @use './common.blocks/_hero3/_btn-slider/btn-slider' as *;
 @use './common.blocks/_hero3/_diploma/diploma' as *;
+@use './common.blocks/_hero3/_view/view' as *;
+@use './common.blocks/_hero5/_qwiz/_request/request' as *;
 
 @use './common.blocks/_hero4/hero4' as *;
 @use './common.blocks/_hero4/_blur-block/blur-block' as *;
@@ -49,11 +51,26 @@
 @use './common.blocks/_hero4/_reference/_body/_img/img' as *;
 @use './common.blocks/_hero4/_paragraph/paragraph' as *;
 
+@use "./common.blocks/_hero5/hero5" as *;
+@use './common.blocks/_hero5/_text/text' as *;
+@use './common.blocks/_hero5/_img/img' as *;
+@use './common.blocks/_hero5/_reference/reference' as *;
+@use './common.blocks/_hero5/_discount/discount' as *;
+@use './common.blocks/_hero5/_btn/btn' as *;
+@use './common.blocks/_hero5/_load-bar/load-bar' as *;
+@use './common.blocks/_hero5/_qwiz/qwiz' as *;
+
 @use './common.blocks/_hero6/hero6' as *;
 @use './common.blocks/_hero6/_guarance/guarance' as *;
 @use './common.blocks/_hero6/_message/message' as *;
 @use './common.blocks/_hero6/_img/img' as *;
 @use './common.blocks/_hero6/_name-block/name-block' as *;
+
+@use './common.blocks/_hero7/hero7' as *;
+@use './common.blocks/_hero7/_text/text' as *;
+
+@use './common.blocks/_hero8/hero8' as *;
+@use './common.blocks/_hero8/_btn/btn' as *;
 
 
 //  Notebook adaptation
@@ -94,10 +111,15 @@
 @use './notebook.blocks/_hero4/hero4' as *;
 @use './notebook.blocks/_hero4/_img/img' as *;
 
+@use './notebook.blocks/_hero5/hero5' as *;
+
 @use './notebook.blocks/_hero6/hero6' as *;
 @use './notebook.blocks/_hero6/_name-block/name-block' as *;
 @use './notebook.blocks/_hero6/_img/img' as *;
 @use './notebook.blocks/_hero6/_message/message' as *;
+
+@use './notebook.blocks/_hero7/hero7' as *;
+@use './notebook.blocks/_hero7/_text/text' as *;
 
 
 // Phone adaptation
@@ -150,8 +172,16 @@
 
 @use './phone.blocks/_hero4/_paragraph/paragraph' as *;
 
+@use './phone.blocks/_hero5/hero5' as *;
+@use './phone.blocks/_hero5/_qwiz/qwiz' as *;
+@use './phone.blocks/_hero5/_text/text' as *;
+@use './phone.blocks/_hero5/_reference/reference' as *;
+@use './phone.blocks/_hero5/_discount/discount' as *;
+
 @use './phone.blocks/_hero6/hero6' as *;
 @use './phone.blocks/_hero6/_guarance/guarance' as *;
 @use './phone.blocks/_hero6/_img/img' as *;
 @use './phone.blocks/_hero6/_message/message' as *;
 @use './phone.blocks/_hero6/_name-block/name-block' as *;
+
+@use './phone.blocks/_hero7/hero7' as *;

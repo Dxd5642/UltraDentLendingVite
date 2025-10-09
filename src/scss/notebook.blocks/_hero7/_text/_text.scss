@@ -1,0 +1,9 @@
+@media (max-width: 1140px){
+    .hero7{
+        &__main-title{
+            & br{
+                display: block;
+            }
+        }
+    }
+}
