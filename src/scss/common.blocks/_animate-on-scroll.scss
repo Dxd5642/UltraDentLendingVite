@@ -1,0 +1,13 @@
+.animateOnScroll{
+    opacity: 0;
+    transform: translateY(-100px);
+    transition-property: transform, opacity;
+    transition-duration: 0s;
+    transition-timing-function: ease-in-out;
+
+    &.animateActive{
+        opacity: 1;
+        transform: translateY(0px);
+        transition-duration: 0.7s;
+    }
+}

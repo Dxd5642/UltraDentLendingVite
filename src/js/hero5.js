@@ -1,18 +1,28 @@
 
-const blockQwiz = document.querySelector(".hero5__qwiz");
-const blockQuestions = document.querySelector(".hero5__qwiz-block");
-const qwizQuestions = document.querySelectorAll(".hero5__qwiz-question");
-const btnBack = document.querySelector(".hero5__btn-back");
-const btnNext = document.querySelector(".hero5__btn-next");
-const btns = document.querySelector(".hero5__btns");
-const hero5Block2 = document.querySelector(".hero5__block2");
+const block2 = document.querySelector(".hero5__block2");
+const blockQwiz = block2.querySelector(".hero5__qwiz");
+const blockQuestions = block2.querySelector(".hero5__qwiz-block");
+const qwizQuestions = block2.querySelectorAll(".hero5__qwiz-question");
+const btnBack = block2.querySelector(".hero5__btn-back");
+const btnNext = block2.querySelector(".hero5__btn-next");
+const btns = block2.querySelector(".hero5__btns");
 
-const visibleStiks = document.querySelectorAll(".hero5__load-bar-value");
-const btnQuestions = document.querySelectorAll(".hero5__qwiz-variant")
+const visibleStiks = block2.querySelectorAll(".hero5__load-bar-value");
+const btnQuestions = block2.querySelectorAll(".hero5__qwiz-variant")
 
-const hero5RequestInputNum = document.querySelector(".hero5__request-input-num");
+const hero5RequestInputNum = block2.querySelector(".hero5__request-input-num");
 
-const btnRequestAgree = document.querySelector(".hero5__request-agree-btn");
+const btnRequestAgree = block2.querySelector(".hero5__request-agree-btn");
+
+const requestName = block2.querySelector(".hero5__request-input-name");
+const requestNum = block2.querySelector(".hero5__request-input-num");
+const requestCheckArgee = block2.querySelector(".hero5__request-agree-btn");
+
+const requestNameGE = block2.getElementsByClassName("hero5__request-input-name")[0];
+const requestNumGE = block2.getElementsByClassName("hero5__request-input-num")[0];
+
+const btnSendRequest = block2.querySelector(".hero5__request-btn");
+
 
 document.addEventListener("DOMContentLoaded", () => {
         new hero7Qwiz(
@@ -26,43 +36,19 @@ document.addEventListener("DOMContentLoaded", () => {
             visibleStiks,
             btnQuestions,
         );
-        btnRequestAgree.addEventListener("click", ()=>{btnRequestAgree.classList.toggle("active")});
-
-        hero5RequestInputNum.addEventListener('input', function(e) {
-            let input = e.target;
-            let value = input.value.replace(/\D/g, '');
-            
-            if (value.startsWith('7') || value.startsWith('8')) {
-                value = value.substring(1);
-            }
-            
-            let formattedValue = '+7 (';
-            
-            if (value.length > 0) {
-                formattedValue += value.substring(0, 3);
-            }
-            if (value.length > 3) {
-                formattedValue += ') - ' + value.substring(3, 6);
-            }
-            if (value.length > 6) {
-                formattedValue += ' - ' + value.substring(6, 8);
-            }
-            if (value.length > 8) {
-                formattedValue += ' - ' + value.substring(8, 10);
-            }
-            
-            input.value = formattedValue;
+        btnRequestAgree.addEventListener("click", ()=>{
+            btnRequestAgree.classList.toggle("active");
+            btnSendRequest.classList.toggle("disabled")
         });
 
-        hero5RequestInputNum.addEventListener('keydown', function(e) {
-            if (e.key === 'Backspace') {
-                let input = e.target;
-                let cursorPosition = input.selectionStart;
-                
-                if (cursorPosition <= 4 || cursorPosition === 9 || cursorPosition === 14 || cursorPosition === 19) {
-                    e.preventDefault();
-                }
-            }
+
+        requestName.addEventListener("input", ()=>{requestName.classList.remove("unapprecial");
+            requestNameGE.placeholder = 'Ваше имя';
+
+        });
+        requestNum.addEventListener("input", ()=>{requestNum.classList.remove("unapprecial");
+            requestNumGE.placeholder = '+7 (___) - ___ - __ - __';
+
         });
 });
 
@@ -109,11 +95,11 @@ class hero7Qwiz {
         this.updateSlider();
     }
 
-    createRequest(){
+    requestPage(){
         this.slides[4].style = "height: auto; min-height: 422px;";
         this.slider.style = "margin-top: auto;";
         btns.classList.add("hide");
-        hero5Block2.style = "gap: 0px;"
+        block2.style = "gap: 0px;"
         
     }
 
@@ -188,7 +174,61 @@ class hero7Qwiz {
         this.nextBtn.classList.toggle('disabled', (this.currentIndex === this.slides.length - 1 || this.num_scrolling == this.num_available_scrolling));
         this.unvisibleNextButton();
         this.changeVisibleStick();
-        if (this.currentIndex == 4){this.createRequest()};
+        if (this.currentIndex == 4){this.requestPage()};
     }
 }
 
+btnSendRequest.addEventListener("click", createRequest);
+
+
+function getActiveButtonIndex(questionSelector) {
+    const questionElement = document.querySelector(questionSelector);
+    if (!questionElement) return 0;
+    
+    const buttons = questionElement.querySelectorAll('.hero5__qwiz-variant');
+    
+    for (let i = 0; i < buttons.length; i++) {
+        if (buttons[i].classList.contains('active')) {
+            return i + 1;
+        }
+    }
+    
+}
+
+import {openFeedback} from './hero1';
+
+function createRequest(){
+    let hasError = false;
+    if (requestName.value == ""){
+        requestName.classList.add("unapprecial");
+        requestNameGE.placeholder = 'Поле не заполнено'
+        hasError = true
+    }
+    if (requestNum.value == ""){
+        requestNum.classList.add("unapprecial");
+        requestNumGE.placeholder = 'Поле не заполнено'
+        hasError = true
+    }
+    if (!(requestCheckArgee.classList.contains("active"))){
+        requestCheckArgee.classList.add("unapprecial");
+        hasError = true
+    }
+
+    if(!hasError){
+        const requestqwiz = {
+            name: requestName.value.trim(),
+            phone: requestNum.value.replace(/\D/g, ''),
+            question1: getActiveButtonIndex('.hero5__qwiz-question1'),
+            question2: getActiveButtonIndex('.hero5__qwiz-question2'),
+            question3: getActiveButtonIndex('.hero5__qwiz-question3'),
+            question4: getActiveButtonIndex('.hero5__qwiz-question4'),
+        }
+        console.log(requestqwiz);
+        requestName.value = "";
+        requestNum.value = "";
+        openFeedback();
+        
+    }
+
+    return
+}

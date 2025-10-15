@@ -1,0 +1,31 @@
+@media (max-width: 970px) {
+    .heero11{
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 744px) {
+    .hero11{
+        &__block1{
+            flex-direction: column-reverse;
+            gap: 0px;
+        }
+
+        &__block2{
+            padding: 16px;
+            grid-template-columns: auto;
+            grid-template-areas:
+            "img"
+            "request"
+            "number";
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    .hero11{
+        &__block2{
+            width: calc(100dvw - 32px);
+    }
+}
+}

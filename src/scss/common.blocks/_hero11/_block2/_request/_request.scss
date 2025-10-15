@@ -1,0 +1,86 @@
+.hero11{
+    &__requets{
+        width: 549px;
+        height: 422px;
+        background-color: rgba(255, 255, 255, 0.15);
+        border-radius: 16px;
+        padding: 20px;
+        grid-area: request;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        & .hero5__request-title{
+            margin-bottom: 0px;
+        }
+
+        & .hero5__request-btn{
+            margin: 0px;
+            box-shadow: 0px 12px 100px 0px rgba(238, 229, 180, 1);
+
+            &.disabled{
+                background-color: rgba(255, 255, 255, 1);
+                border: 0;
+                & p{
+                    color: rgba(68, 67, 80, 0.50);
+                }
+
+                & .hero5__arrow{
+                    display: none;
+                }
+
+                & .hero5__arrow_disabled{
+                    display: block;
+                }
+            }
+        }
+
+        & .hero5__request-text{
+            color: rgb(255, 255, 255);
+        }
+
+        & .hero5__request-input{
+            background-color: rgba(255, 255, 255, 1);
+
+            &::placeholder{
+                color: rgba(45, 45, 45, 0.40);
+            }
+
+            &.unapprecial{
+                background-color: rgb(253, 77, 98);
+                color: white;
+
+                &::placeholder{
+                    color: rgba(255, 255, 255, 1);
+                }
+
+                & ~.hero5__request-text{
+                    color: rgb(255, 17, 45);
+                }
+            }
+        }
+
+        & .hero5__request-agree-btn{
+            background-color: rgba(255, 255, 255, 0.8);
+
+            & .icon{
+                opacity: 0;
+                transition: all 0.2s ease-in-out;
+            }
+
+            &:hover{
+                background-color: rgba(255, 255, 255, 1);
+            }
+
+            &.active{
+                border: 0px;
+
+                & .icon{
+                    opacity: 1;
+                    width: 50%;
+                    height: 50%;
+                }
+            }
+        }
+    }
+}

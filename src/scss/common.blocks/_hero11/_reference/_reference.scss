@@ -1,0 +1,30 @@
+@use '../../../fonts';
+
+.hero11{
+    &__reference{
+        background-color: rgba(242, 242, 242, 1);
+        border-radius: 16px;
+        padding: 48px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 544px;
+        height: auto
+    }
+
+    &__title{
+        @include fonts.Work-sans(28px, normal, 700, 120%, 0em);
+        text-transform: uppercase;
+        color: rgba(45, 45, 45, 1);
+    }
+
+    &__block-text{
+        display: flex;
+        gap: 16px;
+    }
+
+    &__text{
+        @include fonts.Work-sans(15px, normal, 400, 26px, 0em);
+        color: rgba(116, 116, 116, 1);
+    }
+}

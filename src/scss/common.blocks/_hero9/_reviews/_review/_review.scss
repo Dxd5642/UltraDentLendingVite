@@ -1,0 +1,66 @@
+@use '../../../../fonts';
+
+.review{
+    width: 361px;
+    min-width: 361px;
+    height: 458px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    position: relative;
+    margin: 0px 16px;
+
+    &__user-name{
+        @include fonts.Work-sans(28px, normal, 700, 32px, -0.02em);
+        color: rgba(70, 70, 70, 1);
+        margin-bottom: 20px
+    }
+
+    &__data{
+        @include fonts.Work-sans(13px, normal, 600, 32px, -0.04em);
+        color: rgba(215, 215, 215, 1);
+    }
+
+    &__rating{
+        @include fonts.Work-sans(20px, normal, 700, 32px, 0px);
+        color: rgba(45, 45, 45, 1);
+    }
+
+    &__text{
+        @include fonts.Work-sans(16px, normal, 400, 24px, 0px);
+        color: rgba(116, 116, 116, 1);
+    }
+
+    &__stars{
+        display: flex;
+        gap: 8px;
+        margin-bottom: 25px;
+    }
+
+    &__star{
+        width: 20px;
+        height: 20px;
+        background-image: url("../../../../../assets/svg/hero9/star-gray.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        &.active{
+            background-image: url("../../../../../assets/svg/hero9/star.svg");
+        }
+    }
+
+    &__brand{
+        height: 30px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    &__btn{
+        margin: 0px;
+        position: absolute;
+        bottom: 20px;
+        width: calc(100% - 30px);
+    }
+}

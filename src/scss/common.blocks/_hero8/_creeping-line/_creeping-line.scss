@@ -1,0 +1,26 @@
+@use '../../../animations.scss';
+.hero8{
+    &__creeping-line{
+        width: calc(105dvw + 927px);
+        height: 54px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 35dvw;
+        overflow-x: hidden;
+        
+    }
+
+    &__creeping-line1{
+        background: rgba(223, 238, 255, 0.60);
+        backdrop-filter: blur(4px);
+        transform: rotate(6deg) translateZ(0);
+        z-index: 2;
+    }
+
+    &__creeping-line2{
+        background-color: rgba(255, 175, 36, 1);
+        transform: rotate(-2deg);
+        z-index: 1;
+    }
+}

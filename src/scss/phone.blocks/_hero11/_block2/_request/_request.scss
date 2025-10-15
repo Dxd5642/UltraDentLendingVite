@@ -1,0 +1,43 @@
+@media (max-width: 992px) {
+    .hero11{
+        &__requets{
+            width: 329px;
+            height: 390px;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .hero11{
+        &__requets{
+            width: 329px;
+            height: 423px;
+
+            & .hero5__request-btn{
+                border-radius: 8px;
+            }
+
+            & .hero5__request-input{
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+@media (max-width: 483px) {
+    .hero11{
+        &__requets{
+            & .hero5__request-btn{
+                padding: 18px 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 390px){
+    .hero11{
+        &__requets{
+            width: calc(100dvw - 62px);
+        }
+    }
+}

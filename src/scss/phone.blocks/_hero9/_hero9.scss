@@ -1,0 +1,7 @@
+@media (max-width: 710px) {
+    .hero9{
+        &__block-title{
+            width: calc(100dvw - 32px);
+        }
+    }
+}

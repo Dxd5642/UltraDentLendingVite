@@ -1,0 +1,15 @@
+@media (max-width: 1008px) {
+    .hero10{
+        &__content{
+            flex-direction: column;
+            gap: 16px;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 970px) {
+    .hero10{
+        padding-bottom: 30px;
+    }
+}

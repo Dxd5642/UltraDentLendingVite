@@ -14,6 +14,9 @@
 
     &-form{
         position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
 
         & .hero7__warning{
             display: none;
@@ -22,17 +25,12 @@
             left: -33px;
         }
 
-        &.unapprecial{
-            & .hero7__warning{
-                display: block
-            }
-        }
     }
 
     &-text{
+        order: 1;
         @include fonts.Work-sans(15px, normal, 400, 26px, 0em);
         color: rgba(68, 67, 80, 1);
-        align-self: center;
 
         &_line-height{
             line-height: 100%;
@@ -45,6 +43,7 @@
     }
 
     &-input{
+        order: 2;
         width: 100%;
         padding: 18px 16px;
         border-radius: 16px;
@@ -59,14 +58,24 @@
         }
 
         &::placeholder{
-            @include fonts.Work-sans(18px, normal, 400, 100%, -0.05em);
-            color: rgba(45, 45, 45, 0.4);
+            @include fonts.Work-sans(18px, normal, 400, 100%, -0.05px);
+            color: rgba(191, 128, 12, 1);
         }
 
         &::-webkit-outer-spin-button,
         &::-webkit-inner-spin-button {
             -webkit-appearance: none;
             margin: 0;
+        }
+
+        &.unapprecial{
+            background-color: rgba(224, 42, 66, 0.1);
+            &::placeholder{
+                color: rgba(255, 0, 0, 1);
+            }
+            & ~.hero5__request-text{
+                color: rgba(224, 42, 66, 1);
+            }
         }
     }
 
@@ -105,9 +114,33 @@
                 height: 50%;
             }
         }
+    }
 
-        &.unapprecial{
-            border: red;
+    &-btn{
+        & .hero5__arrow_disabled{
+                display: none;
+            }
+
+        &.disabled{
+            opacity: 0.5;
+            background-color: rgba(255, 255, 255, 0);
+            border: 1px solid rgba(68, 67, 80, 0.25);
+            box-shadow: unset;
+            cursor: not-allowed;
+            pointer-events: none;
+
+            & p{
+                color: rgba(68, 67, 80, 0.50);
+            }
+
+            & .hero5__arrow{
+                display: none;
+            }
+
+            & .hero5__arrow_disabled{
+                display: block;
+            }
         }
     }
+
 }

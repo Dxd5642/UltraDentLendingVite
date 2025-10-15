@@ -1,0 +1,16 @@
+@media (max-width: 1230px) {
+    .hero11{
+        &__reference{
+            padding: 12px;//
+            width: 339px;//
+        }
+
+        &__title{
+            font-size: 16px;
+        }
+
+        &__text{
+            font-size: 13px;
+        }
+    }
+}

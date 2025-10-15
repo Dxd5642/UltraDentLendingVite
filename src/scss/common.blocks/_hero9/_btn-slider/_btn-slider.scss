@@ -1,0 +1,30 @@
+.hero9{
+    &__slider{
+        right: unset;
+    }
+
+    &__btn-slider{
+        background-color: unset;
+        border-color: rgba(255, 255, 255, 0.5);
+
+        &:hover{
+            border-color: rgba(255, 255, 255, 0.8);
+        }
+    }
+
+    &__btn-slider_left{
+        &:hover{
+            & .icon{
+                background-image: url("../../../../assets/svg/btn-slider/btn-slider_left_white.svg");
+            }
+        }
+    }
+
+    &__btn-slider_right{
+        &:hover{
+            & .icon{
+                background-image: url("../../../../assets/svg/btn-slider/btn-slider_right_white.svg");
+            }
+        }
+    }
+}

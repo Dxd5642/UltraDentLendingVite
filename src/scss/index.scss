@@ -14,6 +14,8 @@
 @use './common.blocks/_hero1/_button/button' as *;
 @use './common.blocks/_hero1/_promo/promo' as *;
 @use './common.blocks/_hero1/_bg-blur/bg_blur' as *;
+@use './common.blocks/_hero1/_request-call/request-call' as *;
+@use './common.blocks/_hero1/_feedback/feedback' as *;
 
 @use './common.blocks/_hero2/hero2' as *;
 @use './common.blocks/_hero2/_description/description' as *;
@@ -71,6 +73,34 @@
 
 @use './common.blocks/_hero8/hero8' as *;
 @use './common.blocks/_hero8/_btn/btn' as *;
+@use './common.blocks/_hero8/_creeping-line/creeping-line' as *;
+@use './common.blocks/_hero8/_text/text' as *;
+
+@use './common.blocks/_hero9/hero9' as *;
+@use './common.blocks/_hero9/_title/title' as *;
+@use './common.blocks/_hero9/_quality/quality' as *;
+@use './common.blocks/_hero9/_quality/_ratings/rating' as *;
+@use './common.blocks/_hero9/_reviews/reviews' as *;
+@use './common.blocks/_hero9/_reviews/_review/review' as *;
+@use './common.blocks/_hero9/_btn-slider/btn-slider' as *;
+
+@use './common.blocks/_hero10/hero10' as *;
+@use './common.blocks/_hero10/_map/map' as *;
+@use './common.blocks/_hero10/_menu/menu' as *;
+
+@use './common.blocks/_hero11/hero11' as *;
+@use './common.blocks/_hero11/_reference/reference' as *;
+@use './common.blocks/_hero11/_img/img' as *;
+@use './common.blocks/_hero11/_block2/_img/img' as *;
+@use './common.blocks/_hero11/_block2/_number/number' as *;
+@use './common.blocks/_hero11/_block2/_request/request' as *;
+
+@use './common.blocks/_modal-viewDocument/modal' as *;
+@use './common.blocks/_modal-viewDocument/_img/img' as *;
+@use './common.blocks/_modal-viewDocument/_btn-slider/btn-slider' as *;
+@use './common.blocks/_modal-viewDocument/_btn-close/btn-close' as *;
+
+@use './common.blocks/_footer/footer' as *;
 
 
 //  Notebook adaptation
@@ -121,6 +151,16 @@
 @use './notebook.blocks/_hero7/hero7' as *;
 @use './notebook.blocks/_hero7/_text/text' as *;
 
+@use './notebook.blocks/_hero10/hero10' as *;
+@use './notebook.blocks/_hero10/_menu/menu' as *;
+
+@use './notebook.blocks/_hero11/_img/img' as *;
+@use './notebook.blocks/_hero11/_reference/reference' as *;
+@use './notebook.blocks/_hero11/hero11' as *;
+@use './notebook.blocks/_hero11/_block2/_img/img' as *;
+@use './notebook.blocks/_hero11/_block2/_number/number' as *;
+@use './notebook.blocks/_hero11/_block2/_request/request' as *;
+
 
 // Phone adaptation
 @use './phone.blocks/_container/container' as *;
@@ -139,6 +179,7 @@
 @use './phone.blocks/_hero1/_button/button' as *;
 @use './phone.blocks/_hero1/_promo/promo' as *;
 @use './phone.blocks/_hero1/_bg-blur/bg_blur' as *;
+@use './phone.blocks/_hero1/_feedback/feedback' as *;
 
 @use './phone.blocks/_hero2/hero2' as *;
 @use './phone.blocks/_hero2/_description/description' as *;
@@ -185,3 +226,21 @@
 @use './phone.blocks/_hero6/_name-block/name-block' as *;
 
 @use './phone.blocks/_hero7/hero7' as *;
+
+@use './phone.blocks/_hero9/_quality/_ratings/rating' as *;
+@use './phone.blocks/_hero9/hero9' as *;
+@use './phone.blocks/_hero9/_reviews/_review/review' as *;
+
+@use './phone.blocks/_hero10/hero10' as *;
+@use './phone.blocks/_hero10/_map/map' as *;
+@use './phone.blocks/_hero10/_menu/menu' as *;
+
+@use './phone.blocks/_hero11/hero11' as *;
+@use './phone.blocks/_hero11/_reference/reference' as *;
+@use './phone.blocks/_hero11/_img/img' as *;
+@use './phone.blocks/_hero11/_block2/_img/img' as *;
+@use './phone.blocks/_hero11/_block2/_number/number' as *;
+@use './phone.blocks/_hero11/_block2/_request/request' as *;
+
+
+@use './common.blocks/animate-on-scroll' as *;

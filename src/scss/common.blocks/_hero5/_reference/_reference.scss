@@ -1,3 +1,5 @@
+@use '../../../animations.scss';
+
 .hero5{
     &__woman-reference{
         width: 186px;
@@ -11,6 +13,14 @@
         gap: 6px;
         position: absolute;
         right: 286px;
+        transition-duration: 0.5s;
+        transition-property: scale;
+        transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        cursor:default;
+
+        &:hover{
+            @include animations.scale();
+        }
 
         &.lower-width{
             width: 168px;

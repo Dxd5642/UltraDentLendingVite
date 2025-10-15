@@ -1,0 +1,16 @@
+@media (max-width: 1008px) {
+    .hero10{
+        &__map{
+            width: 100dvw;
+            border-radius: 0;
+        }
+    }
+}
+
+@media (max-width: 450px){
+    .hero10{
+        &__map{
+            height: 400px;
+        }
+    }
+}

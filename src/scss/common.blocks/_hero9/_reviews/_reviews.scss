@@ -1,0 +1,16 @@
+.hero9{
+    &__reviews-container{
+        width: 100dvw;
+        max-width: 100dvw;
+        margin-bottom: 32px;
+        overflow-x: hidden;
+    }
+
+    &__reviews-items{
+        overflow-x: scroll;
+        scrollbar-width: none;
+        display: flex;
+        width: auto;
+        // justify-content: center;
+    }
+}

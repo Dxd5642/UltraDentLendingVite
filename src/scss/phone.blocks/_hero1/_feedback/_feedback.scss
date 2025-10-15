@@ -1,0 +1,48 @@
+@use '../../../fonts';
+
+.feedback{
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 524px;
+    height: 464px;
+    border-radius: 28px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 64px;
+
+    &__title{
+        @include fonts.Work-sans(32px, normal, 700, 100%, -0.5px);
+        color: rgba(255, 255, 255, 1);
+        text-align: center;
+        font-style: bolder;
+    }
+
+    &__text{
+        @include fonts.Work-sans(20px, normal, 500, 100%, -0.5px);
+        color: rgba(255, 255, 255, 1);
+        text-align: center;
+
+        &_blue{
+            color: rgba(92, 194, 255, 1);
+        }
+    }
+
+    &__btn-answer{
+        margin: 0px;
+        @include fonts.Work-sans(18px, normal, 600, 100%, -0.5px);
+        color: rgb(255, 255, 255);
+    }
+
+}
+
+@media (max-width: 530px) {
+    .feedback{
+        width: calc(100dvw - 32px);
+        height: auto;
+        justify-content: center;
+        gap: 16px;
+        padding: 64px 16px 16px;
+    }
+}

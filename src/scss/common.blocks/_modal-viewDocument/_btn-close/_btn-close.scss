@@ -1,0 +1,45 @@
+.modal{
+    &__btn-close{
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        border: 1px solid rgb(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0.15);
+        position: absolute;
+        top: -26px;
+        right: -15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & .icon{
+            width: 50%;
+            height: 50%;
+            background-image: url("../../../../assets/svg/btn-close/btn-close_white.svg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        &:hover{
+            & .icon{
+                background-image: url("../../../../assets/svg/btn-close/btn-close_hover.svg");
+            }
+        }
+
+        &:active{
+            & .icon{
+                background-image: url("../../../../assets/svg/btn-close/btn-close_active.svg");
+            }
+        }
+    }
+}
+
+
+@media (max-width: 670px) {
+    .modal{
+        &__btn-close{
+            right: -10px;
+        }
+    }
+}

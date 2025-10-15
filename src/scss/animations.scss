@@ -83,20 +83,20 @@
             transform: rotate(-4deg) translate($default_transform);
         }
 
-        12.5%{
-            transform: rotate(5deg) translate($default_transform);
-        }
-
-        25%{
-            transform: rotate(-4deg) translate($default_transform);
-        }
-
-        37.5%{
-            transform: rotate(5deg) translate($default_transform);
-        }
-
         50%{
             transform: rotate(-4deg) translate($default_transform);
+        }
+
+        62.5%{
+            transform: rotate(5deg) translate($default_transform);
+        }
+
+        75%{
+            transform: rotate(-4deg) translate($default_transform);
+        }
+
+        87.5%{
+            transform: rotate(5deg) translate($default_transform);
         }
 
         100%{
@@ -154,6 +154,29 @@
         }
         100% {
             transform: translate(0, 0) scale(1);
+        }
+    }
+}
+
+@mixin scale(){
+    transition-duration: 0.5s;
+    transition-property: scale;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    scale: 1.1;
+}
+
+@mixin creeping($width){
+    animation-name: creeping;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    @keyframes creeping {
+        0%{
+            transform: translateX(calc(50dvw + $width * 0.5));
+        }
+        100%{
+            transform: translateX(calc(-50dvw - $width * 0.6));
         }
     }
 }

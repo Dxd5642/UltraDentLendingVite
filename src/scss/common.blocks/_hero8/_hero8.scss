@@ -1,0 +1,13 @@
+.hero8{
+    margin-top: 77px;
+    overflow-x: clip;
+    padding-bottom: 100px;
+    &__content{
+        min-height: 278px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100dvw;        
+    }
+}

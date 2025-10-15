@@ -11,6 +11,12 @@
   font-display: swap;
 }
 
+@font-face{
+  font-family: Noto-sans;
+  src: url("../assets/fonts/Noto_Sans/NotoSans-VariableFont_wdth,wght.ttf") format("truetype");
+  font-display: swap;
+}
+
 @mixin Work-sans(
   $font-size: 16px,
   $font-style: normal,
@@ -19,6 +25,21 @@
   $letter-spacing: -0.5px
 ){
   font-family: Work-sans, sans-serif;
+  font-size: $font-size;
+  font-style: $font-style;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin Noto-sans(
+  $font-size: 16px,
+  $font-style: normal,
+  $font-weight: 500,
+  $line-height: 100%,
+  $letter-spacing: -0.5px
+){
+  font-family: Noto-sans, sans-serif;
   font-size: $font-size;
   font-style: $font-style;
   font-weight: $font-weight;

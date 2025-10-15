@@ -1,17 +1,7 @@
 import HeroSlider from './slider';
 
-const doc = document.querySelector(".hero3__img-text1");
-const docview = document.querySelector(".hero3__view-img")
-const docviewBtnClose = document.querySelector(".hero3__btn-close")
-const backblur = document.querySelector(".backblur1");
 const body = document.querySelector("body");
 
-function visibleDocView(){
-        docview.classList.toggle("active");
-        docviewBtnClose.classList.toggle("active");
-        backblur.classList.toggle("active");
-        body.classList.toggle("no_scroll")
-    }
 
 document.addEventListener("DOMContentLoaded", () => {
     if (window.matchMedia("(max-width: 360px)").matches){
@@ -69,11 +59,63 @@ document.addEventListener("DOMContentLoaded", () => {
             1,
         );
     }
-
-    doc.addEventListener('click', visibleDocView);
-    docviewBtnClose.addEventListener('click', visibleDocView);
 });
 
 
+//------------------
 
+const backblur5 = document.querySelector(".backblur5");
+const diplomasItems = document.querySelectorAll(".hero3__diploma-img-slid");
+const diplomBtnClose = document.querySelector('.modal__btn-close');
+const diplomWidget = document.querySelector('.modal__view-document');
+const diplomOpenBtnNext = document.querySelector('.modal__btn-slider_right');
+const diplomOpenBtnBack = document.querySelector('.modal__btn-slider_left');
+const diplomView = document.querySelector('.modal__document');
+const diplomImages = [
+    "./src/assets/images/docView.png",
+    "./src/assets/images/diploms/img1.png",
+    "./src/assets/images/diploms/img2.png",
+    "./src/assets/images/diploms/img3.png",
+    "./src/assets/images/diploms/img4.png",
+    "./src/assets/images/diploms/img5.png",
+]
+let diplomViewIndex = 0;
 
+diplomasItems.forEach( (item, index) => {
+
+    item.addEventListener('click', () => {
+        
+        diplomViewIndex = index;
+        backblur5.classList.toggle("active");
+        body.classList.toggle("no_scroll");
+        diplomView.style = `background-image: url(${diplomImages[diplomViewIndex]})`;
+        diplomWidget.classList.toggle("active");
+        
+    })
+    
+});
+
+diplomBtnClose.addEventListener('click', () => {
+
+    diplomWidget.classList.toggle("active");
+    backblur5.classList.toggle("active");
+    body.classList.toggle("no_scroll");
+})
+
+diplomOpenBtnNext.addEventListener ('click', () => {
+    if(diplomViewIndex >= 0 && diplomViewIndex < diplomImages.length - 1) {
+        diplomViewIndex++;
+        diplomView.style = `background-image: url(${diplomImages[diplomViewIndex]})`
+        
+        
+    }
+})
+
+diplomOpenBtnBack.addEventListener ('click', () => {
+    if(diplomViewIndex >= 1 && diplomViewIndex < diplomImages.length) {
+        diplomViewIndex--;
+        diplomView.style = `background-image: url(${diplomImages[diplomViewIndex]})`
+        
+        
+    }
+})

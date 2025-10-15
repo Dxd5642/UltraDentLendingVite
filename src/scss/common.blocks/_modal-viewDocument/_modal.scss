@@ -1,0 +1,28 @@
+.modal{
+    &__view-document{
+        width: 390px;
+        height: 545px;
+        border-radius: 16px;
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease-in-out;
+
+        &.active{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+@media (max-width: 670px) {
+    .modal{
+        &__view-document{
+            align-self: center;
+        }
+    }
+}

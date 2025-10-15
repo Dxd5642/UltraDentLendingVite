@@ -1,0 +1,30 @@
+.hero11{
+    background-color: rgba(68, 67, 80, 1);
+    padding: 50px 0px 0px;
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__block1{
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__block2{
+        margin-top: 12px;
+        background-color: rgba(255, 175, 36, 1);
+        border-radius: 16px;
+        padding: 32px 24px;
+        display: grid;
+        gap: 16px;
+        grid-template-columns: 549px 549px;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "img request"
+            "number request";
+    }
+}

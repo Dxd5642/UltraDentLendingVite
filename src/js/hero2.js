@@ -24,3 +24,12 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll(".hero2__blocks-doctors")
     );
 });
+
+import {openRequestCallMe} from './hero1';
+
+const hero2 = document.querySelector(".hero2");
+const btnRequest = hero2.querySelectorAll(".doctor-btn-record");
+
+btnRequest.forEach(btn => {
+    btn.addEventListener("click", openRequestCallMe);
+})

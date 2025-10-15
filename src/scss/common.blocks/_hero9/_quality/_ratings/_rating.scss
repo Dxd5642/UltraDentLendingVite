@@ -1,0 +1,46 @@
+@use '../../../../fonts';
+
+.quality{
+    &__block{
+        background-color: rgba(255, 255, 255, 0.25);
+        border-radius: 16px;
+        padding-right: 16px;
+        height: 46px;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__brend{
+        background-color: rgba(255, 255, 255, 1);
+        height: 46px;
+        width: auto;
+        border-radius: 16px;
+        background-color: rbg(255, 255, 255);
+        padding: 7px 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-img{
+            max-width: 216px;
+            max-height: 46px;
+            &:nth-of-type(1){
+                max-width: 186px;
+            }
+        }
+    }
+
+    &__star-text{
+        @include fonts.Noto-sans(20px, normal, 700, 32px, 0px);
+        color: rgba(255, 255, 255, 1);
+    }
+
+    &__star-img{
+        width: 20px;
+        height: 20px;
+    }
+
+}

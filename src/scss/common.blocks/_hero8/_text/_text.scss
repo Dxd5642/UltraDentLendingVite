@@ -1,0 +1,40 @@
+@use '../../../fonts';
+@use '../../../animations.scss';
+
+.hero8{
+
+    &__text1{
+        @include fonts.Work-sans(28px, normal, 700, 120%, 0em);
+        color: rgba(45, 45, 45, 1);
+        text-transform: uppercase;
+        @include animations.creeping(927px); 
+
+        &_blue{
+            color: rgba(58, 125, 203, 1);
+        }
+
+        &_yellow{
+            color: rgba(255, 175, 36, 1);
+        }
+    }
+
+    &__text2{
+        @include fonts.Work-sans(28px, normal, 700, 120%, 0em);
+        color: rgba(255, 255, 255, 1);
+        display: flex;
+        gap: 9px;
+        @include animations.creeping(900px); 
+    }
+}
+
+@media (max-width: 600px) {
+    .hero8{
+        &__text1{
+            font-size: 22px;
+        }
+
+        &__text2{
+            font-size: 22px;
+        }
+    }
+}

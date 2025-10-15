@@ -1,0 +1,14 @@
+@media (max-width: 1184px) {
+    .hero10{
+        &__block-menu{
+            max-width: 328px;
+            width: 100%;
+            margin-right: 14px;
+        }
+
+        &__menu{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+}

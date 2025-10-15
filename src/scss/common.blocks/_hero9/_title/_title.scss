@@ -1,0 +1,24 @@
+@use '../../../fonts';
+
+.hero9{
+    &__title{
+        @include fonts.Work-sans(28px, normal, 500, 120%, 0em);
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+
+        & b{
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+
+    &__title-lowtext{
+        @include fonts.Work-sans(24px, normal, 400, 120%, -0.04em);
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+
+        & b{
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+}

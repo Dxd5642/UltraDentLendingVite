@@ -1,0 +1,13 @@
+
+
+@media (max-width: 456px) {
+    .quality{
+        &__block{
+            width: calc(100dvw - 32px);
+        }
+
+        &__brend{
+            margin-right: auto;
+        }
+    }
+}

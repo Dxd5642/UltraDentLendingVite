@@ -1,0 +1,12 @@
+.hero11{
+    &__request-img{
+        background-image: url("../../../../../assets/images/hero11-request.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 549px;
+        height: 300px;
+        border-radius: 16px;
+        grid-area: img;
+    }
+}

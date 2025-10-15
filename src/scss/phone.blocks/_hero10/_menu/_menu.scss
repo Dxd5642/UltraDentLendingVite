@@ -1,0 +1,15 @@
+@media (max-width: 1008px) {
+    .hero10{
+        &__block-menu{
+            margin-right: 0px;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .hero10{
+        &__menu{
+            width: calc(100dvw - 32px);
+        }
+    }
+}

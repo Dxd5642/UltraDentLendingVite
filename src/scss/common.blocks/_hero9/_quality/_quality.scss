@@ -1,0 +1,26 @@
+@use '../../../fonts';
+
+.quality{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    &__title{
+        @include fonts.Work-sans(28px, normal, 500, 100%, 0em);
+        color: rgba(255, 255, 255, 0.8);
+        text-transform: uppercase;
+        text-align: center;
+
+        & b{
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+
+    &__blocks-rating{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        justify-content: center;
+    }
+}
